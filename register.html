@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous"></script>
+    <link  rel="icon" type="image/x-icon" href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png" />
+    <title>Create New Customer Account Beauty Bebo</title>
+</head>
+<style>
+     body{
+            font-family: 'Roboto', sans-serif;
+        }
+        h4{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #sociallink{
+           display: flex;
+           /* border: 1px solid red; */
+           justify-content: space-between;
+           width: 29%;
+           margin: auto;
+           margin-top: 40px;
+
+        }
+
+        #sociallink a{
+            width: 49.25%;
+            /* height: 35px; */
+            cursor: pointer;
+           
+            text-align: center;
+            text-decoration: none;
+            /* justify-content: center; */
+            padding: 8px 0px;
+            font-size: 15px;
+            color: white;
+            /* background-color:black; */
+            border-radius: 4px;
+        }
+        #facebook{
+            display: flex;
+            background-color: #3b5998;
+            border: #3b5998;
+            
+        }
+        #google{
+            display: flex;
+            background-color: #dd4b39;
+            border: #dd4b39;
+        }
+        .fa-brands{
+        
+         font-size: 20px;
+         padding: 0px 10px ;
+         /* background-color:red; */
+        }
+
+        #or{
+             text-align: center;
+             margin-top: 25px;
+             font-weight: 600;
+             color: #6f6e6c;
+         }
+        /* from here form part css */
+        #form{
+             border: 1px solid #f3f3f3;
+             width: 40%;
+             /* height: 600px; */
+             margin: auto;
+             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+             background-color: #fafafa;
+          
+         }
+
+         #innerform{
+            
+            width: 92%;
+            margin: auto;
+        }
+
+        #personal{
+             font-size: 21px;
+         }
+
+         hr{
+             margin-top: -10px;
+             border:0.01px solid #eeeeee;
+
+         }
+
+         #firstname{
+        display: flex;
+        justify-content: space-between;
+         }
+         #firstname div{
+             width: 47%;
+         }
+
+         #firstname div > input{
+             width: 97.5%;
+           }
+
+           #form-check{
+             margin-top: -15px;
+           }
+         #checkbox1{
+             width: 10%;
+             height: 14px;
+             margin-left: -20px;
+            margin-top: 10px;
+         }
+
+         #checkbox2{
+            font-weight: bold;
+             font-size: 15px;
+             color: #5a5858;
+             margin-left: -22px;
+             margin-bottom: 100px;
+       
+         }
+         input{
+             height: 30px;
+             width: 98.75%;
+             margin-top: 11px;
+            margin-bottom: 25px;
+         }
+         label{
+             font-weight: bold;
+             font-size: 15px;
+             color: #5a5858;
+          
+         }
+
+         span{
+             font-size: 13px;
+             color: #e13431;
+         }
+
+         #submit{
+             width: 30%;
+             border: #444444;
+             background-color: #444444;
+             color: white;
+             height: 35px;
+         }
+
+         #submit:hover{
+             border: #dd0285;
+             background-color: #dd0285;
+         }
+
+         #banner{
+             display: block;
+             position: relative;
+             width: 101%;
+             margin-top: -61px;
+             margin-left: -8px;
+             cursor: pointer;
+             z-index: 1;
+             margin-right: 50px;
+         }
+
+         #play{
+             display: block;
+             position: relative;
+            margin-top:14px;
+            margin-left: 86.5%;
+            height: 47px;
+            cursor: pointer;
+            z-index: 2;
+         }
+
+</style>
+<body>
+    <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="" id="play">
+    <img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="" id="banner">
+    <h4>CREATE NEW CUSTOMER ACCOUNT</h4>
+      <div id="sociallink">
+          <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=578720822792858&kid_directed_site=0&app_id=578720822792858&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.12%2Fdialog%2Foauth%3Fauth_type%3Drerequest%26client_id%3D578720822792858%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fwww.beautybebo.com%252Fsociallogin%252Fsocial%252Fcallback%252F%253Fhauth_done%253DFacebook%26scope%3Demail%252Cpublic_profile%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc42e06ff-8754-470c-bbfc-b586fcff1eb5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth_done%3DFacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%23_%3D_&display=page&locale=en_US&pl_dbl=0" id="facebook">
+              <div><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="google">Sign in with Facebook</div></a>
+          <a href="https://accounts.google.com/o/oauth2/auth?client_id=918010942482-f07ji3th3vvf6o121sidsl5lfuedsq4p.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth.done%3DGoogle&response_type=code&scope=profile+email&access_type=offline" id="google">
+            <div><i class="fa-brands fa-google"></i></div>  
+            <div class="google">Sign in with Google</div></a>
+      </div>
+      <p id="or">-- OR --</p>
+      <form action="" id="form">
+         <div id="innerform">
+             <p id="personal">PERSONAL INFORMATION</p>
+             <hr>
+             <div id="firstname">
+               <!-- <label>First Name <span>*</span></label> -->
+               <div>
+                   <label>First Name <span>*</span></label>
+                <input type="text" id="firstName" >
+              </div>
+              <div>
+               <label>Last Name <span>*</span></label>
+            <input type="text"  id="lastName">
+          </div>
+           </div>
+           <div class="form-check">
+               <input  type="checkbox" value="" id="checkbox1">
+               <label  for="checkbox1" id="checkbox2">
+                Sign Up for Newsletter
+               </label>
+             </div>
+            
+             <div class="input">
+               <label>Email <span>*</span></label>
+               <input type="email" id="email">
+              </div>
+
+           <div class="input">
+               <label>Phone <span>*</span></label>
+               <input type="text" id="phone">
+              </div>
+           <div class="input">
+               <label>Password <span>*</span></label>
+               <input type="password" id="pass" >
+             </div>
+
+           <div class="input">
+               <label>Confirm Password <span>*</span></label>
+               <input type="password" id="conPass">
+           </div>
+
+           <input type="submit" value="CREATE AN ACCOUNT" id="submit">
+        </div>
+       </div>
+      </form>
+</body>
+</html>
+
+<script>
+    document.querySelector("#form").addEventListener("submit",signUp);
+
+    var userData = JSON.parse(localStorage.getItem("userCreds")) || [];
+
+
+    function signUp(){
+        event.preventDefault();
+
+        var usersObj={
+            firstName : document.querySelector("#firstName").value,
+            secondName : document.querySelector("#lastName").value,
+            email : document.querySelector("#email").value,
+            phone : document.querySelector("#phone").value,
+            pass : document.querySelector("#pass").value,
+            conPass : document.querySelector("#conPass").value, 
+        };
+
+      
+            userData.push(usersObj);
+
+            localStorage.setItem("userCreds", JSON.stringify(userData));
+        window.location.href="login.html";
+
+        document.querySelector("#firstName").value="";
+        document.querySelector("#lastName").value="";
+        document.querySelector("#email").value="";
+        document.querySelector("#phone").value="";
+        document.querySelector("#pass").value="";
+        document.querySelector("#conPass").value="";
+       
+
+       
+
+      
+    }
+</script>
