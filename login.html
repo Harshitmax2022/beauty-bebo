@@ -1,279 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous"></script>
-    <link  rel="icon" type="image/x-icon" href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png"
+    />
     <title>Customer Login Beauty Bebo</title>
-</head>
-<style>
-     body{
-            font-family: 'Roboto', sans-serif;
-        }
+  </head>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
 
-        h4{
-            /* text-align: center; */
-            margin-left:170px;
-            font-size: 18px;
-        }
+    h4 {
+      /* text-align: center; */
+      margin-left: 170px;
+      font-size: 18px;
+    }
 
-        #sociallink{
-           display: flex;
-           /* border: 1px solid red; */
-           justify-content: space-between;
-           width: 29%;
-           margin-left:230px;
-           margin-top: 40px;
+    #sociallink {
+      display: flex;
+      /* border: 1px solid red; */
+      justify-content: space-between;
+      width: 29%;
+      margin-left: 230px;
+      margin-top: 40px;
+    }
 
-        }
+    #sociallink a {
+      width: 49.25%;
+      /* height: 35px; */
+      cursor: pointer;
 
-        #sociallink a{
-            width: 49.25%;
-            /* height: 35px; */
-            cursor: pointer;
-           
-            text-align: center;
-            text-decoration: none;
-            /* justify-content: center; */
-            padding: 8px 0px;
-            font-size: 15px;
-            color: white;
-            /* background-color:black; */
-            border-radius: 4px;
-        }
-        #facebook{
-            display: flex;
-            background-color: #3b5998;
-            border: #3b5998;
-            
-        }
+      text-align: center;
+      text-decoration: none;
+      /* justify-content: center; */
+      padding: 8px 0px;
+      font-size: 15px;
+      color: white;
+      /* background-color:black; */
+      border-radius: 4px;
+    }
+    #facebook {
+      display: flex;
+      background-color: #3b5998;
+      border: #3b5998;
+    }
 
-        #facebook:hover{
-            background-color: #29437c;
-            border: #29437c;
-        }
-        #google{
-            display: flex;
-            background-color: #dd4b39;
-            border: #dd4b39;
-        }
+    #facebook:hover {
+      background-color: #29437c;
+      border: #29437c;
+    }
+    #google {
+      display: flex;
+      background-color: #dd4b39;
+      border: #dd4b39;
+    }
 
-        #google:hover{
-            background-color: #c44231;
-            border: #dd4b39;
-        }
-        .fa-brands{
-        
-         font-size: 20px;
-         padding: 0px 10px ;
-         /* background-color:red; */
-        }
+    #google:hover {
+      background-color: #c44231;
+      border: #dd4b39;
+    }
+    .fa-brands {
+      font-size: 20px;
+      padding: 0px 10px;
+      /* background-color:red; */
+    }
 
-        #or{
-             margin-left: 435px;
-             margin-top: 25px;
-             font-weight: 600;
-             color: #6f6e6c;
-         }
+    #or {
+      margin-left: 435px;
+      margin-top: 25px;
+      font-weight: 600;
+      color: #6f6e6c;
+    }
 
-         #doublecontainer{
-       width: 76%;
-       margin: auto;
-       height: 430px;
-       display: flex;
-       justify-content: space-between;
+    #doublecontainer {
+      width: 76%;
+      margin: auto;
+      height: 430px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-         }
+    .signin {
+      width: 48.6%;
+      height: 430px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
 
-         .signin{
-             width: 48.60%;
-             height: 430px;
-             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-         }
+    .signin2 {
+      width: 90%;
+      height: 350px;
+      margin: auto;
+      margin-top: 30px;
+      justify-content: center;
+    }
 
-         .signin2{
-             width: 90%;
-             height: 350px;
-             margin: auto;
-             margin-top: 30px;
-             justify-content: center;
-         }
+    .personal {
+      font-size: 16px;
+    }
 
-         .personal{
-             font-size: 16px;
-         }
+    hr {
+      margin-top: -10px;
+      border: 0.01px solid #eeeeee;
+    }
 
-         hr{
-             margin-top: -10px;
-             border:0.01px solid #eeeeee;
+    .discrip {
+      font-size: 14px;
+      margin-top: 32px;
+      margin-bottom: 30px;
+      color: #6f6e6c;
+    }
 
-         }
+    input {
+      height: 30px;
+      width: 98.75%;
+      margin-top: 11px;
+      margin-bottom: 25px;
+    }
+    label {
+      font-weight: bold;
+      font-size: 15px;
+      color: #5a5858;
+    }
 
-         .discrip{
-             font-size: 14px;
-             margin-top: 32px;
-             margin-bottom: 30px;
-             color: #6f6e6c;
-         }
+    span {
+      font-size: 13px;
+      color: #e13431;
+    }
+    #submit {
+      width: 18%;
+      border: #444444;
+      background-color: #444444;
+      color: white;
+      height: 35px;
+      cursor: pointer;
+    }
 
-         input{
-             height: 30px;
-             width: 98.75%;
-             margin-top: 11px;
-            margin-bottom: 25px;
-         }
-         label{
-             font-weight: bold;
-             font-size: 15px;
-             color: #5a5858;
-          
-         }
+    #submit:hover {
+      border: #dd0285;
+      background-color: #dd0285;
+    }
 
-         span{
-             font-size: 13px;
-             color: #e13431;
-         }
-         #submit{
-             width: 18%;
-             border: #444444;
-             background-color: #444444;
-             color: white;
-             height: 35px;
-             cursor: pointer;
-         }
+    #submit2 {
+      width: 35%;
+      border: #444444;
+      background-color: #444444;
+      color: white;
+      height: 35px;
+      cursor: pointer;
+    }
 
-         #submit:hover{
-             border: #dd0285;
-             background-color: #dd0285;
-         }
+    #submit2:hover {
+      border: #dd0285;
+      background-color: #dd0285;
+    }
 
-         #submit2{
-            width: 35%;
-             border: #444444;
-             background-color: #444444;
-             color: white;
-             height: 35px;
-             cursor: pointer;
-         }
+    a {
+      text-decoration: none;
+      color: black;
+      margin-left: 10px;
+      font-size: 15px;
+    }
 
-         #submit2:hover{
-            border: #dd0285;
-             background-color: #dd0285;
-         }
+    a:hover {
+      color: #dd0285;
+    }
 
-         a{
-             text-decoration: none;
-             color: black;
-             margin-left: 10px;
-             font-size: 15px;
+    #banner {
+      display: block;
+      position: relative;
+      width: 101%;
+      margin-top: -61px;
+      margin-left: -8px;
+      cursor: pointer;
+      z-index: 1;
+    }
 
-         }
-
-         a:hover{
-             color: #dd0285;
-         }
-
-         #banner{
-             display: block;
-             position: relative;
-             width: 101%;
-             margin-top: -61px;
-             margin-left: -8px;
-             cursor: pointer;
-             z-index: 1;
-         }
-
-         #play{
-             display: block;
-             position: relative;
-            margin-top:14px;
-            margin-left: 86.5%;
-            height: 47px;
-            cursor: pointer;
-            z-index: 2;
-         }
-</style>
-<body>
-   
-    <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="" id="play">
-    <img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="" id="banner">
+    #play {
+      display: block;
+      position: relative;
+      margin-top: 14px;
+      margin-left: 86.5%;
+      height: 47px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  </style>
+  <body>
+    <img
+      src="https://www.beautybebo.com/pub/media/bb-app.png"
+      alt=""
+      id="play"
+    />
+    <img
+      src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+      alt=""
+      id="banner"
+    />
     <h4>CUSTOMER LOGIN</h4>
     <div id="sociallink">
-        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=578720822792858&kid_directed_site=0&app_id=578720822792858&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.12%2Fdialog%2Foauth%3Fauth_type%3Drerequest%26client_id%3D578720822792858%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fwww.beautybebo.com%252Fsociallogin%252Fsocial%252Fcallback%252F%253Fhauth_done%253DFacebook%26scope%3Demail%252Cpublic_profile%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc42e06ff-8754-470c-bbfc-b586fcff1eb5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth_done%3DFacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%23_%3D_&display=page&locale=en_US&pl_dbl=0" id="facebook">
-            <div><i class="fa-brands fa-facebook-f"></i></div>
-            <div class="google">Sign in with Facebook</div></a>
-        <a href="https://accounts.google.com/o/oauth2/auth?client_id=918010942482-f07ji3th3vvf6o121sidsl5lfuedsq4p.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth.done%3DGoogle&response_type=code&scope=profile+email&access_type=offline" id="google">
-          <div><i class="fa-brands fa-google"></i></div>  
-          <div class="google">Sign in with Google</div></a>
+      <a
+        href="https://www.facebook.com/login.php?skip_api_login=1&api_key=578720822792858&kid_directed_site=0&app_id=578720822792858&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.12%2Fdialog%2Foauth%3Fauth_type%3Drerequest%26client_id%3D578720822792858%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fwww.beautybebo.com%252Fsociallogin%252Fsocial%252Fcallback%252F%253Fhauth_done%253DFacebook%26scope%3Demail%252Cpublic_profile%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc42e06ff-8754-470c-bbfc-b586fcff1eb5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth_done%3DFacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%23_%3D_&display=page&locale=en_US&pl_dbl=0"
+        id="facebook"
+      >
+        <div><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="google">Sign in with Facebook</div></a
+      >
+      <a
+        href="https://accounts.google.com/o/oauth2/auth?client_id=918010942482-f07ji3th3vvf6o121sidsl5lfuedsq4p.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth.done%3DGoogle&response_type=code&scope=profile+email&access_type=offline"
+        id="google"
+      >
+        <div><i class="fa-brands fa-google"></i></div>
+        <div class="google">Sign in with Google</div></a
+      >
     </div>
     <p id="or">-- OR --</p>
     <div id="doublecontainer">
-        <div class="signin">
-            <div class="signin2">
-
-                <form action="" id="form">
-                    <p class="personal">REGISTERED CUSTOMERS</p>
-                     <hr>
-                     <p class="discrip">If you have an account, sign in with your email address.</p>
-                     <div class="input">
-                        <label>Email <span>*</span></label>
-                        <input type="email" id="email">
-                       </div>
-                     <div class="input">
-                        <label>Password <span>*</span></label>
-                        <input type="password" id="pass" >
-                      </div>
-                      <input type="submit" value="SIGN IN" id="submit">
-                      <a href="https://www.beautybebo.com/customer/account/forgotpassword/">Forgot Your Password?</a>
-                </form>
+      <div class="signin">
+        <div class="signin2">
+          <form action="" id="form">
+            <p class="personal">REGISTERED CUSTOMERS</p>
+            <hr />
+            <p class="discrip">
+              If you have an account, sign in with your email address.
+            </p>
+            <div class="input">
+              <label>Email <span>*</span></label>
+              <input type="email" id="email" />
             </div>
-        </div>
-        <div class="signin">
-            <div class="signin2">
-                <p class="personal">NEW CUSTOMERS</p>
-                <hr>
-                <p class="discrip">Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
-                <button id="submit2">CREATE AN ACCOUNT</button>
+            <div class="input">
+              <label>Password <span>*</span></label>
+              <input type="password" id="pass" />
             </div>
+            <input type="submit" value="SIGN IN" id="submit" />
+            <a
+              href="https://www.beautybebo.com/customer/account/forgotpassword/"
+              >Forgot Your Password?</a
+            >
+          </form>
         </div>
+      </div>
+      <div class="signin">
+        <div class="signin2">
+          <p class="personal">NEW CUSTOMERS</p>
+          <hr />
+          <p class="discrip">
+            Creating an account has many benefits: check out faster, keep more
+            than one address, track orders and more.
+          </p>
+          <button id="submit2">CREATE AN ACCOUNT</button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 
 <script>
-    document.querySelector("#submit2").addEventListener("click",createAcc);
+  document.querySelector("#submit2").addEventListener("click", createAcc);
 
-    function createAcc(){
-        window.location.href="register.html";
+  function createAcc() {
+    window.location.href = "register.html";
+  }
+
+  document.querySelector("#form").addEventListener("submit", signin);
+
+  var regdUsers = JSON.parse(localStorage.getItem("userCreds"));
+
+  function signin() {
+    event.preventDefault();
+
+    var enteredEmail = document.querySelector("#email").value;
+    var enteredPass = document.querySelector("#pass").value;
+
+    for (var i = 0; i < regdUsers.length; i++) {
+      if (
+        enteredEmail === regdUsers[i].email &&
+        enteredPass === regdUsers[i].pass
+      ) {
+        alert("Login Success");
+      } else {
+        alert("Login failed Please fill correct data or create account");
+        document.querySelector("#email").value = "";
+        document.querySelector("#pass").value = "";
+      }
     }
-
-
-    document.querySelector("#form").addEventListener("submit",signin);
-
-    var regdUsers = JSON.parse(localStorage.getItem("userCreds"));
-
-    function signin(){
-        event.preventDefault();
-
-        var enteredEmail = document.querySelector("#email").value;
-        var enteredPass = document.querySelector("#pass").value;
-
-        for(var i=0;i< regdUsers.length;i++){
-
-            if(enteredEmail === regdUsers[i].email  && enteredPass ===  regdUsers[i].pass){
-                alert("Login Success");
-            
-            }
-            else{
-                alert("Login failed Please fill correct data or create account");
-                document.querySelector("#email").value="";
-                document.querySelector("#pass").value="";
-            }
-        }
-    }
+  }
 </script>
