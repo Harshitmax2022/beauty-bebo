@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <script
       src="https://kit.fontawesome.com/c1092efc00.js"
@@ -13,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <style>
       * {
         font-family: "Roboto", sans-serif;
@@ -100,7 +102,6 @@
         padding-top: 20px;
       }
 
-
       /* navbar css start */
 
       .navbar {
@@ -108,8 +109,6 @@
         overflow: hidden;
 
         background-color: #dd0285;
-  
- 
       }
 
       .navbar a {
@@ -120,7 +119,6 @@
         padding: 14px 16px;
         text-decoration: none;
       }
-    
 
       .dropdown {
         float: left;
@@ -178,31 +176,31 @@
 
         /* margin-left: 10px; */
       }
-      .brands{
+      .brands {
         display: flex;
         justify-content: space-between;
         border-top: 2px solid rgb(148, 148, 148);
         margin-bottom: -18px;
       }
-      .brands>h3:nth-child(2){
+      .brands > h3:nth-child(2) {
         font-size: 15px;
         background-color: #dd0285;
         color: white;
         padding: 9px;
+      }
 
+      #bransformation {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 17px;
+        margin-top: 20px;
       }
-      #bransformation{
-       display: grid;
-       grid-template-columns: repeat(6,1fr);
-       gap: 17px;
-       margin-top: 20px;
-      }
-      #bransformation >div{
+      #bransformation > div {
         padding: 10px 15px 10px 15px;
         text-align: center;
         border: 1px solid rgb(148, 148, 148);
       }
-      #bransformation >div:hover{
+      #bransformation > div:hover {
         background-color: #b8b4b4fa;
       }
       .extra {
@@ -237,8 +235,61 @@
         display: table;
         clear: both;
       }
+
       /* navbar css end */
-      
+
+      .rightdropmenu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #colorWhite {
+        color: white;
+      }
+      nav {
+        position: absolute;
+        box-shadow: 0px 8px 16px 0px rgba(238, 236, 236, 0.938);
+      }
+      nav ul {
+        position: relative;
+        list-style-type: none;
+        margin-left: -40px;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+      }
+      nav ul li a {
+        align-items: center;
+        font-family: arial;
+
+        text-decoration: none;
+        color: rgb(143, 137, 137);
+        text-transform: capitalize;
+        padding: 10px;
+      }
+      nav ul li:hover {
+        background-color: #ece7e7;
+      }
+      nav ul li a:hover {
+        color: #dd0285;
+      }
+      .makeblockimg {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+      }
+      #lastestProduct{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+      }
+      #color{
+        color: #c60277;
+        font-weight: bold;
+        margin-left: 4%;
+      }
     </style>
   </head>
   <body>
@@ -462,7 +513,7 @@
         </div>
       </div>
     </div>
-<!-- navbar start -->
+    <!-- navbar start -->
     <div class="navbar">
       <div class="dropdown">
         <button class="dropbtn">
@@ -593,7 +644,7 @@
             </div>
 
             <div class="column">
-             <h5> <img src="toppic1.jpg" alt="" /></h5>
+              <h5><img src="toppic1.jpg" alt="" /></h5>
             </div>
           </div>
         </div>
@@ -628,7 +679,7 @@
               <a href="#"> Shampoo </a>
             </div>
             <div class="column">
-             <h5> <img src="toppic2.jpg" alt="" /></h5>
+              <h5><img src="toppic2.jpg" alt="" /></h5>
             </div>
           </div>
         </div>
@@ -666,7 +717,7 @@
               <a href="#"> Shower Caps </a>
             </div>
             <div class="column">
-             <h5> <img src="toppic3.jpg" alt="" /></h5>
+              <h5><img src="toppic3.jpg" alt="" /></h5>
             </div>
           </div>
         </div>
@@ -679,7 +730,7 @@
         <div class="dropdown-content">
           <div class="row">
             <div class="column">
-              <h5>  BABY CARE</h5>
+              <h5>BABY CARE</h5>
               <a href="#">Bath Time </a>
               <a href="#">Diapers</a>
               <a href="#">Lotions & Creams</a>
@@ -695,7 +746,7 @@
             <div class="column">
               <h5>MOM CARE</h5>
               <a href="#"> Lotions & Creams </a>
-              <a href="#"> Personal Care  </a>
+              <a href="#"> Personal Care </a>
             </div>
             <div class="column">
               <h5><img src="topicpic4.jpg" alt="" /></h5>
@@ -711,31 +762,28 @@
         <div class="dropdown-content">
           <div class="row">
             <div class="column">
-              <h5> </h5>
+              <h5></h5>
               <a href="#"> Perfumes </a>
               <a href="#">Deodorants roll ons</a>
               <a href="#">Body Mist/Spray</a>
             </div>
             <div class="column">
-              <h5><img src="toppic4.jpg" alt=""> </h5>
-          
+              <h5><img src="toppic4.jpg" alt="" /></h5>
             </div>
-           
-           
           </div>
         </div>
       </div>
-      
+
       <div class="dropdown">
         <button class="dropbtn">
-         AYURVEDA
+          AYURVEDA
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <div class="row">
             <div class="column">
-              <h5>    NATURAL SKIN CARE</h5>
- 
+              <h5>NATURAL SKIN CARE</h5>
+
               <a href="#">Body Wash </a>
               <a href="#">Body Lotion</a>
               <a href="#">Lotions & Creams</a>
@@ -764,86 +812,127 @@
           </div>
         </div>
       </div>
-      
+
       <div class="dropdown">
         <button class="dropbtn">
-        BRANDS
+          BRANDS
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <div class="brands">
             <h3>Top Brands</h3>
             <h3>View All</h3>
-           </div>
+          </div>
           <div class="row brands">
-                <div class="column extra">
-                   <div id="bransformation">
-                     <div>LAKME</div>
-                     <div>lOREAL-PARIS</div>
-                     <div>JOY</div>
-                     <div>AROMA MAGIC</div>
-                     <div>LOTUS HERBALS</div>
-                     <div>BIOTIQUE</div>
-                     <div>VLCC</div>
-                     <div>VEGA</div>
-                     <div>MAYBELLINE</div>
-                     <div>MAMAEARTH</div>
-                     <div>CHICCO</div>
-                     <div>NEUTROGENA</div>
-                   </div>
-                  
-             
+            <div class="column extra">
+              <div id="bransformation">
+                <div>LAKME</div>
+                <div>lOREAL-PARIS</div>
+                <div>JOY</div>
+                <div>AROMA MAGIC</div>
+                <div>LOTUS HERBALS</div>
+                <div>BIOTIQUE</div>
+                <div>VLCC</div>
+                <div>VEGA</div>
+                <div>MAYBELLINE</div>
+                <div>MAMAEARTH</div>
+                <div>CHICCO</div>
+                <div>NEUTROGENA</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     </div>
     <!-- navbar end -->
-    <div class="content">  
-      <img src="toppic3.jpg" alt="">
-      <img src="toppic3.jpg" alt="">
-      <img src="toppic3.jpg" alt="">
-      <img src="toppic3.jpg" alt="">
-      <img src="toppic3.jpg" alt="">
-      <img src="toppic3.jpg" alt="">
-          
+
+    <div class="rightdropmenu">
+      <div id="right">
+        <h4>
+          <i class="fa-solid fa-list"></i> ALL CATEGORIES
+          <span id="colorWhite">---------------------</span>
+        </h4>
+        <nav>
+          <ul>
+            <li>
+              <img
+                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png"
+                alt=""
+              /><span><a href="#">MEKEUP</a></span>
+            </li>
+            <li>
+              <img
+                src="	https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png"
+                alt=""
+              /><a href="#">SKIN</a>
+            </li>
+            <li>
+              <img
+                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/hair-small.png"
+                alt=""
+              /><a href="#">HAIR</a>
+            </li>
+            <li>
+              <img
+                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/personal-care-small.png"
+                alt=""
+              /><a href="#">PERSONAL CARE</a>
+            </li>
+            <li>
+              <img
+                src="	https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/mom-baby-care-small.png"
+                alt=""
+              /><a href="#">MOM&BABY CARE</a>
+            </li>
+            <li>
+              <img
+                src="	https://www.beautybebo.com/pub/media/fragrance.png"
+                alt=""
+              /><a href="#">FRAGRANCE</a>
+            </li>
+            <li>
+              <img
+                src="	https://www.beautybebo.com/pub/media/ayurveda.png"
+                alt=""
+              /><a href="#">AYUBADA</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <img src="banner.jpg" alt="" />
+      </div>
     </div>
- 
+
+    <div><img class="makeblockimg" src="image7.jpg" alt="" /></div>
+
+    <div id="latestProduct">
+  <!-- area to drop of latestes product -->
+    </div>
+
+
+
+    <div class="rightdropmenu">
+      <div><img src="offferpic1.gif" alt=""></div>
+      <div><img src="offerpic2.gif" alt=""></div>
+    </div>
+    <div id="productShowFilter">
+       <!-- area for the product filter like makup and all -->
+    </div>
+
+
+
+
+    <!-- area start for offerpic and read more msg -->
+    <div><img class="makeblockimg" src="offer2.jpg" alt=""></div>
+    <div><img class="makeblockimg" src="readmore.jpg" alt=""></div>
+    <p id="color">Read More.....</p>
+
+    <footer></footer>
   </body>
 </html>
+
+
 <script>
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementsByClassName("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+ 
 </script>
