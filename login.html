@@ -11,6 +11,16 @@
     <link  rel="icon" type="image/x-icon" href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c1092efc00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <title>Customer Login Beauty Bebo</title>
 </head>
 <style>
@@ -216,11 +226,787 @@
          #btnScrollToTop:active{
              background-color: #c20978;
          }
+
+         * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      #topbar {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      #beautyLogo {
+        width: 288px;
+        height: 68px;
+      }
+      #topmiddleinner {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 12px;
+        line-height: 19.92px;
+
+        border: 0.5px solid rgb(214, 214, 214);
+      }
+      #categoryDropDown {
+        font-size: large;
+        border: 0px;
+      }
+      #topmiddleinner {
+        border: 0.5px solid rgb(233 233 233);
+        padding-left: 10px;
+        font-size: 10px;
+        border-radius: 5px;
+      }
+
+      #searchbar {
+        font-size: large;
+        padding-right: 20px;
+        border: 0;
+        outline: 0;
+      }
+      #searchbox {
+        font-size: large;
+        padding: 15px 17px 15px 17px;
+        margin-left: -5px;
+        border: 0;
+        background-color: #dd0285;
+        color: white;
+        border-radius: 3px;
+        
+      }
+      option {
+        font-size: large;
+      }
+
+      #toprightCorner {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+      }
+      #heart,
+      #personlogo {
+        font-size: 30px;
+        margin: auto;
+        margin-top: 10px;
+        margin-right: 15px;
+        background-color: white;
+        border: 1px solid black;
+      }
+      #personlogo {
+        margin-right: 0;
+        border: 1px solid rgb(151, 151, 151);
+      }
+      #personlogo:hover {
+        background-color: #dd0285;
+        color: white;
+      }
+      #heart:hover {
+        background-color: #dd0285;
+        color: white;
+      }
+
+      #signupbuttoncorner {
+        display: flex;
+      }
+      #text {
+        padding-top: 20px;
+      }
+
+      /* navbar css start */
+
+      .navbar {
+        width: 100%;
+        overflow: hidden;
+
+        background-color: #dd0285;
+      }
+
+      .navbar a {
+        float: right;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+        margin-left: 10px;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      /* .navbar a:hover, */
+      .dropdown:hover .dropbtn {
+        background-color: #c60277;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        /* width: 30%; */
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(238, 236, 236, 0.938);
+        z-index: 1;
+      }
+
+      .dropdown-content .header {
+        background: white;
+        padding: 16px;
+        color: white;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        margin-left: 10px;
+      }
+      .column {
+        margin-top: -10px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        /* width: 30%; */
+        padding: 10px;
+        margin-right: 10px;
+
+        /* margin-left: 10px; */
+      }
+      .brands {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid rgb(148, 148, 148);
+        margin-bottom: -18px;
+      }
+      .brands > h3:nth-child(2) {
+        font-size: 15px;
+        background-color: #dd0285;
+        color: white;
+        padding: 9px;
+      }
+
+      #bransformation {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 17px;
+        margin-top: 20px;
+      }
+      #bransformation > div {
+        padding: 10px 15px 10px 15px;
+        text-align: center;
+        border: 1px solid rgb(148, 148, 148);
+      }
+      #bransformation > div:hover {
+        background-color: #b8b4b4fa;
+      }
+      .extra {
+        float: left;
+        /* width: 30%; */
+        height: 140px;
+        padding: 10px;
+        margin-right: 10px;
+
+        /* margin-left: 10px; */
+      }
+
+      .column a {
+        float: none;
+        color: #666666;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-bottom: -16px;
+        margin-left: -14px;
+        margin-top: -20px;
+      }
+
+      .navbar a:hover {
+        color: #c60277;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 </style>
 <body>
    
     <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="" id="play">
     <img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="" id="banner">
+
+    <div id="topbar">
+        <div id="beautyLogo">
+          <img
+            src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div id="topmiddle">
+            <div id="topmiddleinner">
+              <select id="categoryDropDown">
+                <option value="All Categories">All Categories</option>
+                <option value="3">- - Makeup</option>
+                <option value="8">- - - - Face</option>
+                <option value="">All Categories</option>
+                <option value="123">- - - - - - Foundation</option>
+                <option value="124">- - - - - - Blush</option>
+                <option value="125">- - - - - - Highlighters</option>
+                <option value="126">- - - - - - Concealer</option>
+                <option value="127">- - - - - - Compact &amp; Powder</option>
+                <option value="128">- - - - - - Face Primer</option>
+                <option value="129">- - - - - - Makeup Remover</option>
+                <option value="130">- - - - - - Contour</option>
+                <option value="131">- - - - - - Bronzer</option>
+                <option value="132">- - - - - - BB Cream</option>
+                <option value="133">- - - - - - Loose Powder</option>
+                <option value="134">- - - - - - Setting Spray</option>
+                <option value="172">- - - - - - Makeup Kits</option>
+                <option value="175">- - - - - - CC Cream</option>
+                <option value="9">- - - - Eye</option>
+                <option value="135">- - - - - - Eye Shadow</option>
+                <option value="136">- - - - - - Eyeliner</option>
+                <option value="137">- - - - - - False Eyelashes</option>
+                <option value="138">- - - - - - Mascara</option>
+                <option value="139">- - - - - - Eye Brow Enhancers</option>
+                <option value="140">- - - - - - Kajal</option>
+                <option value="141">- - - - - - Under Eye Concealer</option>
+                <option value="142">- - - - - - Eye Makeup Remover</option>
+                <option value="143">- - - - - - Contact Lenses</option>
+                <option value="144">- - - - - - Eye Primer</option>
+                <option value="145">- - - - - - Eye-Palettes</option>
+                <option value="173">- - - - - - Eye Kit</option>
+                <option value="10">- - - - Lips</option>
+                <option value="146">- - - - - - Lipstick</option>
+                <option value="147">- - - - - - Liquid Lipstick</option>
+                <option value="148">- - - - - - Lip Liner</option>
+                <option value="149">- - - - - - Lip Gloss</option>
+                <option value="150">- - - - - - Lip Balm</option>
+                <option value="151">- - - - - - Lip Crayon</option>
+                <option value="152">- - - - - - Lip Stain</option>
+                <option value="153">- - - - - - Lip Plumper</option>
+                <option value="11">- - - - Nails</option>
+                <option value="154">- - - - - - Nail Polish</option>
+                <option value="155">
+                  - - - - - - Manicure &amp; Pedicure Kits
+                </option>
+                <option value="156">- - - - - - Nail Care</option>
+                <option value="157">- - - - - - Nail Polish Sets</option>
+                <option value="158">- - - - - - Nail Art Kits</option>
+                <option value="159">- - - - - - Nail Polish Remover</option>
+                <option value="12">- - - - Tools brushes</option>
+                <option value="161">- - - - - - Face Brush</option>
+                <option value="162">- - - - - - Makeup Pouches</option>
+                <option value="163">- - - - - - Sponges &amp; Applicators</option>
+                <option value="164">- - - - - - Eye Brush</option>
+                <option value="166">- - - - - - Blush&nbsp;Brush</option>
+                <option value="167">- - - - - - Tweezers</option>
+                <option value="168">- - - - - - Lip Brush</option>
+                <option value="169">- - - - - - Eyelash Curlers</option>
+                <option value="165">- - - - - - - - Brush Sets</option>
+                <option value="170">- - - - - - Sharpeners</option>
+                <option value="171">- - - - - - Mirrors</option>
+                <option value="4">- - Skin</option>
+                <option value="13">- - - - Body care</option>
+                <option value="77">- - - - - - Body Moisturizers</option>
+                <option value="79">- - - - - - Kits &amp; Combos</option>
+                <option value="81">- - - - - - Body Sun Care</option>
+                <option value="82">- - - - - - Hand Creams</option>
+                <option value="83">- - - - - - Body Toners</option>
+                <option value="84">- - - - - - Hands &amp; Feet</option>
+                <option value="85">
+                  - - - - - - Dark Circles &amp; Wrinkles
+                </option>
+                <option value="86">- - - - - - Neck Creams</option>
+                <option value="87">- - - - - - Brightening Lotion</option>
+                <option value="88">- - - - - - Foot Cream</option>
+                <option value="90">- - - - - - Night Cream</option>
+                <option value="92">- - - - - - Hair Remover Cream</option>
+                <option value="95">- - - - - - All Cream</option>
+                <option value="179">- - - - - - Day Cream</option>
+                <option value="14">- - - - Face care</option>
+                <option value="93">- - - - - - Facial Kits</option>
+                <option value="96">- - - - - - Moisturizer</option>
+                <option value="97">- - - - - - Face Wash</option>
+                <option value="98">- - - - - - Facial Wipes</option>
+                <option value="99">- - - - - - Brightening Cream</option>
+                <option value="101">- - - - - - Face Cleansers</option>
+                <option value="102">- - - - - - Face Oil</option>
+                <option value="103">- - - - - - Mask &amp; Peels</option>
+                <option value="105">- - - - - - Toner &amp; Astringents</option>
+                <option value="106">- - - - - - Bleach Creams</option>
+                <option value="107">- - - - - - Anti- Ageing Creams</option>
+                <option value="108">- - - - - - Face Tools</option>
+                <option value="178">- - - - - - Serum</option>
+                <option value="15">- - - - Eye Care</option>
+                <option value="112">- - - - - - Dark Circles</option>
+                <option value="113">- - - - - - Eye Contour Care</option>
+                <option value="114">- - - - - - Eye Cream</option>
+                <option value="115">- - - - - - Eye Masks</option>
+                <option value="116">- - - - - - Eye Serums</option>
+                <option value="117">- - - - - - Under Eye Creams</option>
+                <option value="118">- - - - - - Under Eye Wrinkles</option>
+                <option value="119">- - - - - - Puffiness</option>
+                <option value="5">- - Hair</option>
+                <option value="17">- - - - Hair Care</option>
+                <option value="58">- - - - - - Hair Color/ Dye</option>
+                <option value="59">- - - - - - Gels &amp; Waxes</option>
+                <option value="60">- - - - - - Hair Spray</option>
+                <option value="61">
+                  - - - - - - Hairfall &amp; Thinning&nbsp;
+                </option>
+                <option value="62">- - - - - - Dandruff</option>
+                <option value="63">- - - - - - Color Protection</option>
+                <option value="67">
+                  - - - - - - Hair Creams &amp; Masks&nbsp;
+                </option>
+                <option value="69">- - - - - - Dry Shampoo</option>
+                <option value="70">- - - - - - Hair Styling</option>
+                <option value="71">- - - - - - Straighteners&nbsp;</option>
+                <option value="18">- - - - Hair Loss</option>
+                <option value="64">- - - - - - Shampoo</option>
+                <option value="66">- - - - - - Hair Oil</option>
+                <option value="68">- - - - - - Hair Serum</option>
+                <option value="72">- - - - - - Conditioner</option>
+                <option value="76">- - - - - - Hair Growth solutions</option>
+                <option value="6">- - Personal Care</option>
+                <option value="19">- - - - Bath &amp; Body</option>
+                <option value="45">- - - - - - Essential Oils</option>
+                <option value="46">- - - - - - Ubtan &amp; Face Packs</option>
+                <option value="51">- - - - - - Creams</option>
+                <option value="52">- - - - - - Foot Cream</option>
+                <option value="78">- - - - - - Body Cleansers</option>
+                <option value="80">- - - - - - Body Massage Oil</option>
+                <option value="89">- - - - - - Body Wash</option>
+                <option value="100">- - - - - - Scrubs &amp; Exfoliants</option>
+                <option value="20">- - - - Bath &amp; Shower</option>
+                <option value="48">- - - - - - Shower Gel</option>
+                <option value="49">- - - - - - Body Soaps</option>
+                <option value="21">- - - - Bathing Accessories</option>
+                <option value="53">- - - - - - Bath Brushes</option>
+                <option value="54">- - - - - - Shower Caps</option>
+                <option value="55">- - - - - - Sponges</option>
+                <option value="56">- - - - - - Loofahs</option>
+                <option value="7">- - Mom &amp; Baby Care</option>
+                <option value="22">- - - - Baby Care</option>
+                <option value="24">- - - - - - Lotions &amp; Creams</option>
+                <option value="25">- - - - - - Oils</option>
+                <option value="26">- - - - - - Shampoo</option>
+                <option value="27">- - - - - - Soaps</option>
+                <option value="28">- - - - - - Wipes</option>
+                <option value="29">- - - - - - Sterilizer &amp; Cleaners</option>
+                <option value="30">- - - - - - Powder</option>
+                <option value="31">- - - - - - Diapers</option>
+                <option value="32">- - - - - - Bath time</option>
+                <option value="33">- - - - - - Rash Cream</option>
+                <option value="23">- - - - Mom Care</option>
+                <option value="34">- - - - - - Lotions &amp; Creams</option>
+                <option value="35">- - - - - - personal Care</option>
+                <option value="174">- - Fragrance</option>
+                <option value="94">- - - - Perfumes</option>
+                <option value="180">- - - - Deodorants-roll-ons</option>
+                <option value="181">- - - - Body Mist /Spray</option>
+                <option value="177">- - Ayurveda</option>
+                <option value="182">- - - - Natural Skin Care</option>
+                <option value="185">- - - - - - Body Wash</option>
+                <option value="186">- - - - - - Body Lotion</option>
+                <option value="187">- - - - - - Sun Protection</option>
+                <option value="188">- - - - - - Face Wash</option>
+                <option value="189">- - - - - - Mask</option>
+                <option value="190">- - - - - - Eye Care</option>
+                <option value="191">- - - - - - Scrub</option>
+                <option value="198">- - - - - - Lip Care</option>
+                <option value="202">- - - - - - Cream</option>
+                <option value="203">- - - - - - Cleansers</option>
+                <option value="204">- - - - - - Gel</option>
+                <option value="205">- - - - - - Pack</option>
+                <option value="183">- - - - Natural Hair Care</option>
+                <option value="192">- - - - - - Hair Oils</option>
+                <option value="193">- - - - - - Hair Serum</option>
+                <option value="196">- - - - - - Hair Gel</option>
+                <option value="197">- - - - - - Shampoo</option>
+                <option value="201">- - - - - - Conditioner</option>
+                <option value="206">- - Latest Offer</option>
+              </select>
+  
+              <div>
+                <input
+                  id="searchbar"
+                  type="text"
+                  placeholder="Enter your search..."
+                />
+                <button id="searchbox">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="toprightCorner">
+          <div>
+            <button id="heart"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div id="signupbuttoncorner">
+            <div>
+              <button id="personlogo" onclick="singOpFunction()"><i class="fa-solid fa-user"></i>
+            </button>
+            </div>
+            <div id="text">My Account</div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            MAKEUP
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>FACE</h5>
+                <a href="#">BB CREAM </a>
+                <a href="#">BLUSH</a>
+                <a href="#">Bronzer </a>
+                <a href="#">CC Cream </a>
+                <a href="#">Contour </a>
+                <a href="#">Concealer </a>
+                <a href="#">Compact & Powder </a>
+                <a href="#">Face Primer </a>
+                <a href="#">Foundation </a>
+                <a href="#">Highlighters </a>
+                <a href="#">Loose Powder </a>
+                <a href="#">Makeup Kits </a>
+                <a href="#">Makeup Remover </a>
+                <a href="#">Setting Spray </a>
+              </div>
+              <div class="column">
+                <h5>EYE</h5>
+                <a href="#"> Contact Lenses </a>
+                <a href="#"> Eye Kit </a>
+                <a href="#"> Eyeliner </a>
+                <a href="#"> Eye Shadow </a>
+                <a href="#"> Eye Primer </a>
+                <a href="#"> Eye-Palettes </a>
+                <a href="#"> Eye Makeup Remover </a>
+                <a href="#"> Eye Brow Enhancers </a>
+                <a href="#"> False Eyelashes </a>
+                <a href="#"> Kajal </a>
+                <a href="#"> Mascara </a>
+                <a href="#"> Under Eye Concealer </a>
+              </div>
+              <div class="column">
+                <h5>LIPS</h5>
+                <a href="#">Lipstick</a>
+                <a href="#">Liquid Lipstick</a>
+                <a href="#">Lip Liner</a>
+                <a href="#">Lip Gloss</a>
+                <a href="#">Lip Balm</a>
+                <a href="#">Lip Crayon</a>
+                <a href="#">Lip Stain</a>
+                <a href="#">Lip Stain</a>
+              </div>
+  
+              <div class="column">
+                <h5>NAILS</h5>
+                <a href="#">Manicure & Pedicure Kits</a>
+                <a href="#">Nail Polish</a>
+                <a href="#">Nail Care</a>
+                <a href="#">Nail Polish Sets</a>
+                <a href="#">Nail Art Kits</a>
+                <a href="#">Nail Polish Remover</a>
+              </div>
+              <div class="column">
+                <h5>TOOL BRUSHES</h5>
+                <a href="#">Blush Brush</a>
+                <a href="#">Eyelash Curlers</a>
+                <a href="#">Eye Brush</a>
+                <a href="#">Face Brush</a>
+                <a href="#">Lip Brush</a>
+                <a href="#">Makeup Pouches</a>
+                <a href="#">Mirrors</a>
+                <a href="#">Sponges & Applicators</a>
+                <a href="#">Sharpeners</a>
+                <a href="#">Tweezers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            SKIN
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>EYE CARE</h5>
+                <a href="#">Dark Circles </a>
+                <a href="#">Eye Contour Care</a>
+                <a href="#">Eye Cream</a>
+                <a href="#"> Eye Masks </a>
+                <a href="#"> Eye Serums </a>
+                <a href="#">Puffiness </a>
+                <a href="#">Under Eye Creams </a>
+                <a href="#">Under Eye Wrinkles</a>
+              </div>
+              <div class="column">
+                <h5>FACE CARE</h5>
+                <a href="#"> Anti- Ageing Creams </a>
+                <a href="#"> Bleach Creams </a>
+                <a href="#"> Brightening Cream </a>
+                <a href="#"> Face Wash </a>
+                <a href="#"> Facial Wipes </a>
+                <a href="#"> Face Oil </a>
+                <a href="#"> Face Cleansers </a>
+                <a href="#"> Facial Kits </a>
+                <a href="#"> Face Tools </a>
+                <a href="#"> Moisturizer </a>
+                <a href="#"> Mask & Peels </a>
+                <a href="#">Serum</a>
+                <a href="#">Toner & Astringents</a>
+              </div>
+              <div class="column">
+                <h5>BODY CARE</h5>
+                <a href="#"> All Cream</a>
+                <a href="#">Body Moisturizers</a>
+                <a href="#"> Body Toners</a>
+                <a href="#">Body Sun Care</a>
+                <a href="#">Brightening Lotion</a>
+                <a href="#">Dark Circles & Wrinkles</a>
+                <a href="#"> Day Cream</a>
+                <a href="#">Foot Cream</a>
+                <a href="#"> Hair Remover Cream</a>
+                <a href="#"> Hand Creams</a>
+                <a href="#">Hands & Feet</a>
+                <a href="#"> Kits & Combost</a>
+                <a href="#"> Night Cream</a>
+                <a href="#"> Neck Creams</a>
+              </div>
+  
+              <div class="column">
+                <h5><img src="toppic1.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+            HAIR
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>HAIR CARE</h5>
+                <a href="#">Color Protection </a>
+                <a href="#">Dandruff</a>
+                <a href="#">Dry Shampoo</a>
+                <a href="#"> Gels & Waxes </a>
+                <a href="#">Hair Spray</a>
+                <a href="#">Hair Color/ Dye</a>
+                <a href="#">Hair Creams & Masks </a>
+                <a href="#">Hair Styling</a>
+                <a href="#">Hairfall & Thinning </a>
+                <a href="#">Straighteners </a>
+              </div>
+              <div class="column">
+                <h5>HAIR LOSS</h5>
+                <a href="#"> Conditioner </a>
+                <a href="#"> Hair Oil </a>
+                <a href="#"> Hair Serum </a>
+                <a href="#"> Hair Growth Solutions </a>
+                <a href="#"> Shampoo </a>
+              </div>
+              <div class="column">
+                <h5><img src="toppic2.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+            PERSONAL CARE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>BATH & BODY</h5>
+                <a href="#">Body Cleansers </a>
+                <a href="#">Body Massage Oil</a>
+                <a href="#">Body Wash</a>
+                <a href="#"> Creams </a>
+                <a href="#">Essential Oils</a>
+                <a href="#">Foot Cream</a>
+                <a href="#">Scrubs & Exfoliants </a>
+                <a href="#">Ubtan & Face Packs</a>
+              </div>
+              <div class="column">
+                <h5>BATHING ACCESSORIES</h5>
+                <a href="#"> Bath Brushes </a>
+                <a href="#"> Loofahs </a>
+                <a href="#"> Shower Caps </a>
+                <a href="#"> Sponges </a>
+              </div>
+              <div class="column">
+                <h5>BATH & SHOWER</h5>
+                <a href="#"> Body Soaps </a>
+                <a href="#"> Shower Ge </a>
+                <a href="#"> Shower Caps </a>
+              </div>
+              <div class="column">
+                <h5><img src="toppic3.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            MOMS &BABY CARE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>BABY CARE</h5>
+                <a href="#">Bath Time </a>
+                <a href="#">Diapers</a>
+                <a href="#">Lotions & Creams</a>
+                <a href="#"> Creams </a>
+                <a href="#"> Oils</a>
+                <a href="#">Powder</a>
+                <a href="#">Shampoo</a>
+                <a href="#">Soaps</a>
+                <a href="#">Sterilizer & Cleaners</a>
+                <a href="#">Rash Cream</a>
+                <a href="#">Wipes</a>
+              </div>
+              <div class="column">
+                <h5>MOM CARE</h5>
+                <a href="#"> Lotions & Creams </a>
+                <a href="#"> Personal Care </a>
+              </div>
+              <div class="column">
+                <h5><img src="topicpic4.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            FRAGRANCE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5></h5>
+                <a href="#"> Perfumes </a>
+                <a href="#">Deodorants roll ons</a>
+                <a href="#">Body Mist/Spray</a>
+              </div>
+              <div class="column">
+                <h5><img src="toppic4.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+            AYURVEDA
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>NATURAL SKIN CARE</h5>
+  
+                <a href="#">Body Wash </a>
+                <a href="#">Body Lotion</a>
+                <a href="#">Lotions & Creams</a>
+                <a href="#"> Cleansers </a>
+                <a href="#"> Cream</a>
+                <a href="#">Eye Care</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Gel</a>
+                <a href="#">Lip Care</a>
+                <a href="#">Mask</a>
+                <a href="#">Pack</a>
+                <a href="#">Scrub</a>
+                <a href="#">Sun Protection</a>
+              </div>
+              <div class="column">
+                <h5>ATURAL HAIR CARE</h5>
+                <a href="#"> Conditioner</a>
+                <a href="#"> Hair Oils </a>
+                <a href="#"> Hair Serum </a>
+                <a href="#"> Hair Gel</a>
+                <a href="#"> Shampoo</a>
+              </div>
+              <div class="column">
+                <h5><img src="toppic5.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+            BRANDS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="brands">
+              <h3>Top Brands</h3>
+              <h3>View All</h3>
+            </div>
+            <div class="row brands">
+              <div class="column extra">
+                <div id="bransformation">
+                  <div>LAKME</div>
+                  <div>lOREAL-PARIS</div>
+                  <div>JOY</div>
+                  <div>AROMA MAGIC</div>
+                  <div>LOTUS HERBALS</div>
+                  <div>BIOTIQUE</div>
+                  <div>VLCC</div>
+                  <div>VEGA</div>
+                  <div>MAYBELLINE</div>
+                  <div>MAMAEARTH</div>
+                  <div>CHICCO</div>
+                  <div>NEUTROGENA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
     <h4>CUSTOMER LOGIN</h4>
 
     <button id="btnScrollToTop">
@@ -270,6 +1056,10 @@
 </html>
 
 <script>
+function singOpFunction(){
+         window.location.href="login.html"
+       }
+
     var btnScrollToTop = document.querySelector("#btnScrollToTop");
        btnScrollToTop.addEventListener("click",  function (){
            window.scrollTo({
