@@ -278,7 +278,7 @@
                behavior:"smooth",
            })
        })
-       
+
     document.querySelector("#submit2").addEventListener("click",createAcc);
 
     function createAcc(){
@@ -298,12 +298,13 @@
 
         for(var i=0;i< regdUsers.length;i++){
 
-            if(enteredEmail === regdUsers[i].email  && enteredPass ===  regdUsers[i].pass){
+            if(regdUsers[i].email===enteredEmail  &&  regdUsers[i].pass===enteredPass){
                 alert("Login Success");
+                break;
             
             }
             else{
-                alert("Login failed Please fill correct data or create account");
+                console.log("Login failed Please fill correct data or create account");
                 document.querySelector("#email").value="";
                 document.querySelector("#pass").value="";
             }
