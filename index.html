@@ -14,7 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <style>
       * {
         font-family: "Roboto", sans-serif;
@@ -54,6 +55,7 @@
         font-size: large;
         padding-right: 20px;
         border: 0;
+        outline: 0;
       }
       #searchbox {
         font-size: large;
@@ -63,6 +65,7 @@
         background-color: #dd0285;
         color: white;
         border-radius: 3px;
+        
       }
       option {
         font-size: large;
@@ -239,6 +242,7 @@
       /* navbar css end */
 
       .rightdropmenu {
+        margin: auto;
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
@@ -290,6 +294,25 @@
         font-weight: bold;
         margin-left: 4%;
       }
+      /* scroll bar css */
+      #btnScrollToTop{
+             position:fixed;
+             right: 20px;
+             bottom: 20px;
+             width: 45px;
+             height: 45px;
+             border-radius:50% ;
+             background-color:#dd0285 ;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+             color: white;
+             cursor: pointer;
+             border: none;
+             outline: none;
+         }
+
+         #btnScrollToTop:active{
+             background-color: #c20978;
+         }
     </style>
   </head>
   <body>
@@ -507,7 +530,8 @@
         </div>
         <div id="signupbuttoncorner">
           <div>
-            <button id="personlogo"><i class="fa-solid fa-user"></i></button>
+            <button id="personlogo" onclick="singOpFunction()"><i class="fa-solid fa-user"></i>
+          </button>
           </div>
           <div id="text">My Account</div>
         </div>
@@ -903,6 +927,11 @@
         <img src="banner.jpg" alt="" />
       </div>
     </div>
+    <!-- scroll barr start -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+  </button>
+    <!-- scroll barr end -->
 
     <div><img class="makeblockimg" src="image7.jpg" alt="" /></div>
 
@@ -934,5 +963,16 @@
 
 
 <script>
- 
+ var btnScrollToTop = document.querySelector("#btnScrollToTop");
+       btnScrollToTop.addEventListener("click",  function (){
+           window.scrollTo({
+               top:0,
+               left:0,
+               behavior:"smooth",
+           })
+       })
+
+       function singOpFunction(){
+         window.location.href="login.html"
+       }
 </script>
