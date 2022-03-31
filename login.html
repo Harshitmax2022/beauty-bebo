@@ -252,8 +252,6 @@
         display: flex;
         justify-content: space-evenly;
         font-size: 12px;
-        line-height: 19.92px;
-
         border: 0.5px solid rgb(214, 214, 214);
       }
       #categoryDropDown {
@@ -272,16 +270,20 @@
         padding-right: 20px;
         border: 0;
         outline: 0;
+        margin-top: 20px;
       }
       #searchbox {
         font-size: large;
-        padding: 15px 17px 15px 17px;
+        padding:10px 20px 20px 20px;
         margin-left: -5px;
         border: 0;
         background-color: #dd0285;
         color: white;
         border-radius: 3px;
         
+      }
+      #changesomthing{
+        display: flex;
       }
       option {
         font-size: large;
@@ -328,6 +330,7 @@
         overflow: hidden;
 
         background-color: #dd0285;
+        margin-top: 5px;
       }
 
       .navbar a {
@@ -655,7 +658,7 @@
                 <option value="206">- - Latest Offer</option>
               </select>
   
-              <div>
+              <div id="changesomthing">
                 <input
                   id="searchbar"
                   type="text"
