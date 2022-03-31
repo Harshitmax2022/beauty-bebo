@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous"></script>
     <link  rel="icon" type="image/x-icon" href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
     <title>Create New Customer Account Beauty Bebo</title>
 </head>
 <style>
@@ -187,7 +187,6 @@
             cursor: pointer;
             z-index: 2;
          }
-
          #btnScrollToTop{
              position:fixed;
              right: 20px;
@@ -275,8 +274,7 @@
 </html>
 
 <script>
-
-       var btnScrollToTop = document.querySelector("#btnScrollToTop");
+var btnScrollToTop = document.querySelector("#btnScrollToTop");
        btnScrollToTop.addEventListener("click",  function (){
            window.scrollTo({
                top:0,
@@ -284,6 +282,7 @@
                behavior:"smooth",
            })
        })
+
     document.querySelector("#form").addEventListener("submit",signUp);
 
     var userData = JSON.parse(localStorage.getItem("userCreds")) || [];
@@ -302,18 +301,31 @@
         };
 
       
+          if(usersObj.pass===usersObj.conPass){
             userData.push(usersObj);
 
-            localStorage.setItem("userCreds", JSON.stringify(userData));
-        window.location.href="login.html";
+localStorage.setItem("userCreds", JSON.stringify(userData));
+window.location.href="login.html";
 
-        document.querySelector("#firstName").value="";
-        document.querySelector("#lastName").value="";
-        document.querySelector("#email").value="";
-        document.querySelector("#phone").value="";
-        document.querySelector("#pass").value="";
-        document.querySelector("#conPass").value="";
-       
+document.querySelector("#firstName").value="";
+document.querySelector("#lastName").value="";
+document.querySelector("#email").value="";
+document.querySelector("#phone").value="";
+document.querySelector("#pass").value="";
+document.querySelector("#conPass").value="";
+
+          }
+          else{
+              alert("PLease fill correct data");
+             
+document.querySelector("#firstName").value="";
+document.querySelector("#lastName").value="";
+document.querySelector("#email").value="";
+document.querySelector("#phone").value="";
+document.querySelector("#pass").value="";
+document.querySelector("#conPass").value="";
+
+          }
 
        
 
