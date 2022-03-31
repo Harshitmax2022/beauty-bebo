@@ -201,6 +201,25 @@
       cursor: pointer;
       z-index: 2;
     }
+
+    #btnScrollToTop{
+             position:fixed;
+             right: 20px;
+             bottom: 20px;
+             width: 45px;
+             height: 45px;
+             border-radius:50% ;
+             background-color:#dd0285 ;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+             color: white;
+             cursor: pointer;
+             border: none;
+             outline: none;
+         }
+
+         #btnScrollToTop:active{
+             background-color: #c20978;
+         }
   </style>
   <body>
     <img
@@ -214,6 +233,11 @@
       id="banner"
     />
     <h4>CUSTOMER LOGIN</h4>
+
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
     <div id="sociallink">
       <a
         href="https://www.facebook.com/login.php?skip_api_login=1&api_key=578720822792858&kid_directed_site=0&app_id=578720822792858&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.12%2Fdialog%2Foauth%3Fauth_type%3Drerequest%26client_id%3D578720822792858%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fwww.beautybebo.com%252Fsociallogin%252Fsocial%252Fcallback%252F%253Fhauth_done%253DFacebook%26scope%3Demail%252Cpublic_profile%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc42e06ff-8754-470c-bbfc-b586fcff1eb5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.beautybebo.com%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth_done%3DFacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Ddf8ff6295cebed33bc4096472f1b7e07%23_%3D_&display=page&locale=en_US&pl_dbl=0"
@@ -272,6 +296,15 @@
 </html>
 
 <script>
+  var btnScrollToTop = document.querySelector("#btnScrollToTop");
+       btnScrollToTop.addEventListener("click",  function (){
+           window.scrollTo({
+               top:0,
+               left:0,
+               behavior:"smooth",
+           })
+       })
+
   document.querySelector("#submit2").addEventListener("click", createAcc);
 
   function createAcc() {
