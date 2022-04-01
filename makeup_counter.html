@@ -723,6 +723,9 @@ var inputdata = [
             //                                                               BUTTON FOR ADD TO FAVORITS LIST START
             var button_addToFevBut = document.createElement('button')
             button_addToFevBut.setAttribute('class', 'addToFevBut')
+            button_cartbutton.addEventListener("click", function() {
+     buttonCartSecond(e);
+ })
             //                                                              BUTTON FOR ADD TO FAVORITES LIST END
 
 
@@ -738,5 +741,12 @@ var inputdata = [
             //                                                   product detail like name price end
         })
     }
+
+    var cartData=JSON.parse(localStorage.getItem("sendToCartData1")) || [];
+function  buttonCartSecond(e){
+  cartData.push(e);
+console.log("chill");
+  localStorage.setItem("sendToCartData1",JSON.stringify(cartData));
+}
 
 </script>

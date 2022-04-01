@@ -678,6 +678,9 @@
             //                                                          BUTTON FOR ADD TO CART  START 
             var button_cartbutton = document.createElement('button')
             button_cartbutton.setAttribute('class', 'cartbutton')
+            button_cartbutton.addEventListener("click", function() {
+     buttonCartSecond(e);
+ })
             //                                                          BUTTON FOR ADD TO CART END
 
 
@@ -731,5 +734,11 @@
             //                                                   product detail like name price end
         })
     }
+    var cartData=JSON.parse(localStorage.getItem("sendToCartData1")) || [];
+function  buttonCartSecond(e){
+  cartData.push(e);
+console.log("chill");
+  localStorage.setItem("sendToCartData1",JSON.stringify(cartData));
+}
 
 </script>
