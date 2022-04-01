@@ -397,7 +397,7 @@
       #allOption {
         border: 1px solid #cabbd1e3;
         display: grid;
-        width: 92%;
+        width: 95%;
         margin: auto;
         grid-template-columns: repeat(7, 1fr);
         margin-top: 20px;
@@ -1096,6 +1096,12 @@
           </div>
         </div>
       </div>
+       <!-- ========================importent direct button for go to addtocart================================== -->
+      <div class="dropdown"> 
+        <button Class="dropbtn gotoCartButton">
+          <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+        </button>
+      </div>
     </div>
     <!-- navbar end -->
 
@@ -1647,4 +1653,12 @@
     console.log(cartData);
     localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
   }
+
+
+  // =============================gotoCartButton=======================
+  document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+function sendingToCart(){
+  window.location.href="mycart.html"
+}
 </script>

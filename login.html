@@ -1121,6 +1121,14 @@
             </div>
           </div>
         </div>
+
+
+        <!-- ========================importent direct button for go to addtocart================================== -->
+        <div class="dropdown">
+          <button Class="dropbtn gotoCartButton">
+            <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+          </button>
+        </div>
       </div>
       <!-- navbar end -->
 
@@ -1355,5 +1363,12 @@ function singOpFunction(){
                 document.querySelector("#pass").value="";
             }
         }
+    }
+
+    // =============================gotoCartButton=======================
+    document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+    function sendingToCart(){
+      window.location.href="mycart.html"
     }
 </script>
