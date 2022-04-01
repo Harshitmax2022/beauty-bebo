@@ -776,11 +776,11 @@
           <div class="row">
             <div class="column">
               <h5>FACE</h5>
-              <a href="#">BB CREAM </a>
-              <a href="#">BLUSH</a>
+              <a href="makeup_bb_cream.html">BB CREAM </a>
+              <a href="makeup_blush.html">BLUSH</a>
               <a href="#">Bronzer </a>
               <a href="#">CC Cream </a>
-              <a href="#">Contour </a>
+              <a href="makeup_counter.html">Contour </a>
               <a href="#">Concealer </a>
               <a href="#">Compact & Powder </a>
               <a href="#">Face Primer </a>
@@ -957,8 +957,8 @@
             </div>
             <div class="column">
               <h5>BATHING ACCESSORIES</h5>
-              <a href="#"> Bath Brushes </a>
-              <a href="#"> Loofahs </a>
+              <a href="personal_care_bath_brushes.html"> Bath Brushes </a>
+              <a href="personal_care_loofahs.html"> Loofahs </a>
               <a href="#"> Shower Caps </a>
               <a href="#"> Sponges </a>
             </div>
@@ -993,7 +993,7 @@
               <a href="#">Soaps</a>
               <a href="#">Sterilizer & Cleaners</a>
               <a href="#">Rash Cream</a>
-              <a href="#">Wipes</a>
+              <a href="mom_baby_care_wips.html">Wipes</a>
             </div>
             <div class="column">
               <h5>MOM CARE</h5>
@@ -1363,7 +1363,7 @@
               </li>
               <li>
                 <div class="widget block block-category-link">
-                  <a href="#"><span>Mom &amp; Baby Care</span></a>
+                  <a href="#"><span>Mom & Baby Care</span></a>
                 </div>
               </li>
               <li>
@@ -1412,60 +1412,60 @@
   // =======================script for the first box of product==========================================!
   var newProductData = [
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/e/repair_shampoo_650-2_1_1.jpg",
-      name: "Dove Intence Repair Shampoo 650 ml",
+      productname: "Dove Intence Repair Shampoo 650 ml",
       price: 350.0,
-      actuallPrice: "₹500.00",
-      percentOf: "10% off",
+      strickedoff: "₹500.00",
+      discount: "10% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8908003416557_1.png",
-      name: "Organic Harvest Cleansing Milk",
+        productname: "Organic Harvest Cleansing Milk",
       price: 491.0,
-      actuallPrice: "₹545.00",
-      percentOf: "10% off",
+      strickedoff: "₹545.00",
+      discount: "10% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/i/m/image1_600x.jpg",
-      name: "Lotus Herbals Whiteglow Vitamin C",
+        productname: "Lotus Herbals Whiteglow Vitamin C",
       price: 428.0,
-      actuallPrice: "₹475.00",
-      percentOf: "10% off",
+      strickedoff: "₹475.00",
+      discount: "10% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/6/3699c478906105612174-2.jpg",
-      name: "Wow Skin Science Face Serum",
+        productname: "Wow Skin Science Face Serum",
       price: 515.0,
-      actuallPrice: "₹599.00",
-      percentOf: "10% off",
+      strickedoff: "₹599.00",
+      discount: "10% off",
     },
   ];
 
   newProductData.map(function (elem) {
     var div = document.createElement("div");
     var img = document.createElement("img");
-    img.src = elem.image;
+    img.src = elem.producturl;
 
     var name = document.createElement("p");
     name.setAttribute("class", "nameHover");
-    name.innerText = elem.name;
+    name.innerText = elem.productname;
 
     var priceVary = document.createElement("div");
     priceVary.setAttribute("class", "priceVary");
 
     var actuallPrice = document.createElement("p");
     actuallPrice.style.textDecoration = "line-through";
-    actuallPrice.innerText = elem.actuallPrice;
+    actuallPrice.innerText = elem.strickedoff;
 
     var price = document.createElement("p");
     price.innerText = "₹" + elem.price;
 
     var percent = document.createElement("p");
-    percent.innerText = elem.percentOf;
+    percent.innerText = elem.discount;
     priceVary.append(actuallPrice, price, percent);
 
     var div_starRating = document.createElement("div");
@@ -1526,35 +1526,35 @@
 
   var secondBoxData = [
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
-      name: "Miss Claire Eyelash Glue",
-      price: 322.0,
-      actuallPrice: "₹350.00",
-      percentOf: "8% off",
+      productname: "Miss Claire Eyelash Glue",
+      price: 322.00,
+      strickedoff: "₹350.00",
+      discount: "8% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/b/5b990e16902395773146_3.jpg",
-      name: "Maybelline New York Fit Primer",
+        productname: "Maybelline New York Fit Primer",
       price: 475.0,
-      actuallPrice: "₹599.00",
+      strickedoff: "₹599.00",
       percentOf: "10% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/9/6902395735908_0.jpg",
-      name: "ponds",
+        productname: "ponds",
       price: 750.0,
-      actuallPrice: "₹899.00",
+      strickedoff: "₹899.00",
       percentOf: "8% off",
     },
     {
-      image:
+      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
-      name: "ponds",
+        productname: "ponds",
       price: 604.0,
-      actuallPrice: "₹649.00",
+      strickedoff: "₹649.00",
       percentOf: "7% off",
     },
   ];
@@ -1562,18 +1562,18 @@
   secondBoxData.map(function (elem) {
     var div = document.createElement("div");
     var img = document.createElement("img");
-    img.src = elem.image;
+    img.src = elem.producturl;
 
     var name = document.createElement("p");
     name.setAttribute("class", "nameHover");
-    name.innerText = elem.name;
+    name.innerText = elem.productname;
 
     var priceVary = document.createElement("div");
     priceVary.setAttribute("class", "priceVary");
 
     var actuallPrice = document.createElement("p");
     actuallPrice.style.textDecoration = "line-through";
-    actuallPrice.innerText = elem.actuallPrice;
+    actuallPrice.innerText = elem.strickedoff;
 
     var price = document.createElement("p");
     price.innerText = "₹" + elem.price;
