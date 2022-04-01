@@ -300,6 +300,112 @@
             width: 100%;
             cursor: pointer;
         }
+         /* ===================================footer csss======================== */
+      #footerParentDiv {
+        background-color: rgb(36, 34, 34);
+        width: 102%;
+        margin: auto;
+      }
+      #InsideFooterBox {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        margin-left: 5%;
+      }
+      .topicCss {
+        margin-left: 7%;
+      }
+      hr.new2 {
+        border-top: 1px dashed #d4278f;
+        width: 20%;
+        margin-left: 1px;
+        margin-top: -5%;
+        text-decoration: none;
+      }
+      hr.new3 {
+        border: 1px solid white;
+        width: 85%;
+        margin-bottom: 10px;
+      }
+      .links-contact,
+      .li-social {
+        list-style: none;
+        margin-left: -6%;
+      }
+      #InsideFooterBox a {
+        text-decoration: none;
+      }
+
+      .phone {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .time {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      .special {
+        font-size: 20px;
+        background-color: #c20978;
+        color: white;
+        padding: 15px;
+        border-radius: 41%;
+      }
+      .connectionOnSocialSite {
+        display: flex;
+      }
+      .connectionOnSocialSite > li {
+        margin: 2px;
+      }
+      .links > li {
+        margin-bottom: 10px;
+      }
+      .links a,
+      .mail a,
+      .phone,
+      .time,
+      h3 {
+        color: white;
+      }
+      .links a:hover,
+      .mail a:hover {
+        color: #c60277;
+      }
+      .footerLastPart {
+        display: flex;
+        justify-content: space-around;
+        width: 89%;
+        margin-left: 5%;
+      }
+      #subsribeForm {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 15%;
+      }
+      #subsribeForm > #subscribe {
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+        margin-left: 15px;
+      }
+      #footerParentDiv > p {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+      }
+      #subsribeForm > button {
+        font-size: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #c20978;
+        color: white;
+        margin-top: 2px;
+      }
+      /* =================================foooter csss end here====================================================== */
     </style>
 </head>
 
@@ -404,7 +510,142 @@
 
             <!--                                                             PRODUCT IMAGE AND DETAIL buttom selector  END   -->
         </div>
+
     </div>
+     <!-- footer start=========================================== -->
+     <footer>
+        <div id="footerParentDiv">
+          <div id="InsideFooterBox">
+            <div>
+              <div class="topicCss">
+                <h3>CONTACT INFO</h3>
+                <hr class="new2" />
+              </div>
+  
+              <ul class="links-contact">
+                <li class="phone">(+91) 97990 30777</li>
+                <li class="mail">
+                  <a href="mailto:support@beautybebo.com"
+                    >support@beautybebo.com</a
+                  ><br /><a href="mailto:sales@beautybebo.com"
+                    >sales@beautybebo.com</a
+                  >
+                </li>
+                <li class="time">Open time: 10:00AM - 7:00PM</li>
+              </ul>
+  
+              <ul class="connectionOnSocialSite">
+                <li class="li-social facebook-social">
+                  <a
+                    title="Facebook"
+                    href="https://www.facebook.com/BeautyBebo-339715696750230/"
+                    target="_blank"
+                    ><span class="fa fa-facebook icon-social special"style></span
+                    ><span class="name-social"></span></a
+                  >
+                </li>
+                <li class="li-social pinterest-social">
+                  <a
+                    title="Instagram"
+                    href="https://www.instagram.com/beautybeboofficial/"
+                    target="_blank"
+                    ><span class="fa fa-instagram icon-social special"></span>
+                    <span class="name-social"></span></a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <div class="topicCss">
+                <h3>QUICK LINK</h3>
+                <hr class="new2" />
+              </div>
+  
+              <ul class="links">
+                <li><a href="/about-us">About us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li>
+                  <a href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/return-policy">Return and Refund Policy</a></li>
+                <li><a href="/shipping-policy">Shipping Policy</a></li>
+              </ul>
+            </div>
+  
+            <div>
+              <div class="topicCss">
+                <h3>CUSTOMER INFO</h3>
+                <hr class="new2" />
+              </div>
+  
+              <ul class="links">
+                <li><a href="/customer/account/">My Account</a></li>
+                <li><a href="/track-order/">Track your Order</a></li>
+                <li><a href="/order-return">Order Returns</a></li>
+                <li><a href="/wishlist/">Wishlist</a></li>
+                <li><a href="/blog/">News &amp; Events</a></li>
+                <li><a href="/faqs">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="topicCss">
+                <h3>CATEGORIES</h3>
+                <hr class="new2" />
+              </div>
+  
+              <ul class="links">
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Makeup</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Skin</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Hair</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Personal Care</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Mom & Baby Care</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Fragrance</span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget block block-category-link">
+                    <a href="#"><span>Ayurveda</span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="new3" />
+          <div class="footerLastPart">
+            <div class="footer_payment_img"><img src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png" alt=""></div>
+            <div id="subsribeForm">
+              <h3>Signup for Newsletter</h3>
+              <input type="email" name="" id="subscribe" placeholder="Signup for Newsletter"   >
+              <button>Subscribe</button>
+            </div>
+            </div>
+            <p>@ 2020 All Rights Reserved</p>
+        </div>
+      </footer>
 </body>
 
 </html>
