@@ -14,8 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <style>
       * {
         font-family: "Roboto", sans-serif;
@@ -65,7 +67,6 @@
         background-color: #dd0285;
         color: white;
         border-radius: 3px;
-        
       }
       option {
         font-size: large;
@@ -284,35 +285,261 @@
         margin: auto;
         margin-top: 20px;
       }
-      #lastestProduct{
+      #lastestProduct {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
       }
-      #color{
+      #color {
         color: #c60277;
         font-weight: bold;
         margin-left: 4%;
       }
       /* scroll bar css */
-      #btnScrollToTop{
-             position:fixed;
-             right: 20px;
-             bottom: 20px;
-             width: 45px;
-             height: 45px;
-             border-radius:50% ;
-             background-color:#dd0285 ;
-             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-             color: white;
-             cursor: pointer;
-             border: none;
-             outline: none;
-         }
+      #btnScrollToTop {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #dd0285;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
 
-         #btnScrollToTop:active{
-             background-color: #c20978;
-         }
+      #btnScrollToTop:active {
+        background-color: #c20978;
+      }
+
+      #latestProduct {
+        width: 97%;
+        margin-top: 20px;
+        margin-left: 1%;
+      }
+      #latestProduct > h4 {
+        margin-left: 2%;
+        text-decoration: underline;
+        color: #c20978;
+        font-weight: bold;
+      }
+
+      #container,
+      #secondContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 10;
+      }
+
+      #container > div,
+      #secondContainer > div {
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      #container > div:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      .addToCartButton {
+        font-size: large;
+        margin: 0;
+        border-radius: 5px;
+      }
+      .nameHover {
+        text-align: center;
+      }
+      .nameHover:hover {
+        color: #dd0285;
+      }
+      .starRating {
+        margin-left: 30%;
+      }
+      .addTocartSet {
+        display: flex;
+        margin-left: 14%;
+      }
+      .checked {
+        color: orange;
+      }
+      .priceVary {
+        display: flex;
+        justify-content: flex-start;
+        margin: auto;
+        margin-left: 20%;
+      }
+      .priceVary p {
+        margin-left: 5%;
+      }
+      .priceVary p:nth-child(2) {
+        color: #dd0285;
+        font-weight: bold;
+      }
+      .priceVary p:nth-child(3) {
+        color: green;
+        font-weight: bold;
+      }
+      .cartheart {
+        font-size: 25px;
+        margin-left: 5px;
+        border: 0;
+        border-radius: 5px;
+      }
+      .cartheart:hover {
+        background-color: #dd0285;
+        color: white;
+      }
+      #allOption {
+        border: 1px solid #cabbd1e3;
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(7, 181px);
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+      #allOption p {
+        text-align: center;
+        margin-top: -10px;
+      }
+      #allOption > div > div > img {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px 20px 32%;
+        margin-left: 5px;
+      }
+      .icon {
+        border: 1px solid #cabbd1e3;
+      }
+
+      #allOption > div:hover {
+        background-color: #e95db1;
+        color: white;
+      }
+      #secondContainer {
+        width: 97%;
+        margin: auto;
+        
+      }
+      #secondContainer >div:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+     #allOption>div:nth-child(1){
+         background-color: #e95db1;
+         color: white;
+      }
+      /* ===================================footer csss======================== */
+      #footerParentDiv{
+        background-color: rgb(36, 34, 34);
+        width: 102%;
+        margin: auto;
+       
+      }
+      #InsideFooterBox {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        margin-left: 5%;
+      }
+      .topicCss {
+        margin-left: 7%;
+      }
+      hr.new2 {
+        border-top: 1px dashed #d4278f;
+        width: 20%;
+        margin-left: 1px;
+        margin-top:-5%;
+        text-decoration: none;
+      }
+      hr.new3{
+        border: 1px solid white;
+        width: 85%;
+        margin-bottom: 10px;
+
+      }
+      .links-contact,.li-social{
+        list-style: none;
+        margin-left: -6%;
+      }
+      #InsideFooterBox a{
+        text-decoration: none;
+      }
+      
+      .phone{
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .time{
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      .special{
+        font-size: 20px;
+        background-color: #c20978;
+        color: white;
+        padding: 15px;
+    border-radius: 41%;
+       
+      }
+      .connectionOnSocialSite{
+        display: flex;
+      }
+      .connectionOnSocialSite>li{
+        margin: 2px;
+      }
+      .links>li{
+        margin-bottom: 10px;
+      }
+      .links a,.mail a,.phone,.time,h3{
+        color: white;
+      }
+      .links a:hover,.mail a:hover{
+           color: #c60277;
+      }
+      .footerLastPart{
+        display: flex;
+        justify-content: space-around;
+        width: 89%;
+        margin-left: 5%;
+      }
+      #subsribeForm{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 15%
+      }
+      #subsribeForm>#subscribe{
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+        margin-left: 15px;
+       
+      }
+      #footerParentDiv>p{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+      }
+      #subsribeForm>button{
+        font-size: 20px;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+        background-color: #c20978;
+        color: white;
+        margin-top: 2px;
+       
+      }
+     /* =================================foooter csss end here====================================================== */
+
     </style>
   </head>
   <body>
@@ -530,8 +757,9 @@
         </div>
         <div id="signupbuttoncorner">
           <div>
-            <button id="personlogo" onclick="singOpFunction()"><i class="fa-solid fa-user"></i>
-          </button>
+            <button id="personlogo" onclick="singOpFunction()">
+              <i class="fa-solid fa-user"></i>
+            </button>
           </div>
           <div id="text">My Account</div>
         </div>
@@ -882,7 +1110,7 @@
               <img
                 src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png"
                 alt=""
-              /><span><a href="#">MEKEUP</a></span>
+              /><span><a href="#">MEKEUP</a> </span>
             </li>
             <li>
               <img
@@ -930,49 +1158,482 @@
     <!-- scroll barr start -->
     <button id="btnScrollToTop">
       <i class="material-icons">arrow_upward</i>
-  </button>
+    </button>
     <!-- scroll barr end -->
 
     <div><img class="makeblockimg" src="image7.jpg" alt="" /></div>
 
     <div id="latestProduct">
-  <!-- area to drop of latestes product -->
+      <h4>NEW ARRIVALS</h4>
+      <!-- area to drop of latestes product -->
+      <div id="container"></div>
     </div>
-
-
-
     <div class="rightdropmenu">
-      <div><img src="offferpic1.gif" alt=""></div>
-      <div><img src="offerpic2.gif" alt=""></div>
+      <div><img src="offferpic1.gif" alt="" /></div>
+      <div><img src="offerpic2.gif" alt="" /></div>
     </div>
     <div id="productShowFilter">
-       <!-- area for the product filter like makup and all -->
+      <div id="allOption">
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png"
+              alt=""
+            />
+          </div>
+          <p>MAKEUP</p>
+        </div>
+
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/skin.png"
+              alt=""
+            />
+          </div>
+          <p>SKIN</p>
+        </div>
+
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/hair.png"
+              alt=""
+            />
+          </div>
+          <p>HAIR</p>
+        </div>
+
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png"
+              alt=""
+            />
+          </div>
+          <p>PERSONAL CARE</p>
+        </div>
+
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png"
+              alt=""
+            />
+          </div>
+          <p>MOMS CARE</p>
+        </div>
+
+        <div class="icon">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/eye_1.png"
+              alt=""
+            />
+          </div>
+          <p>EYE</p>
+        </div>
+
+        <div class="icon">
+          <div style="margin-top: 12px">
+            <img
+              src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png"
+              alt=""
+            />
+          </div>
+          <p>PREAGRANCE</p>
+        </div>
+      </div>
+      <div id="secondContainer">
+        <!-- =======================secondBox of product============================================================ -->
+      </div>
     </div>
 
-
-
+    <!-- =====AREA FOR GIRL SCRUP PIC========= -->
+    <div><img class="makeblockimg" src="GIRLCRUB.gif" alt="" /></div>
+    <div><img class="makeblockimg" src="BLM.jpg" alt="" /></div>
 
     <!-- area start for offerpic and read more msg -->
-    <div><img class="makeblockimg" src="offer2.jpg" alt=""></div>
-    <div><img class="makeblockimg" src="readmore.jpg" alt=""></div>
+    <div><img class="makeblockimg" src="offer2.jpg" alt="" /></div>
+    <div><img class="makeblockimg" src="readmore.jpg" alt="" /></div>
     <p id="color">Read More.....</p>
+    <!-- =============================foooter================================================================ -->
+    <footer>
+      <div id="footerParentDiv">
+        <div id="InsideFooterBox">
+          <div>
+            <div class="topicCss">
+              <h3>CONTACT INFO</h3>
+              <hr class="new2" />
+            </div>
 
-    <footer></footer>
+            <ul class="links-contact">
+              <li class="phone">(+91) 97990 30777</li>
+              <li class="mail">
+                <a href="mailto:support@beautybebo.com"
+                  >support@beautybebo.com</a
+                ><br /><a href="mailto:sales@beautybebo.com"
+                  >sales@beautybebo.com</a
+                >
+              </li>
+              <li class="time">Open time: 10:00AM - 7:00PM</li>
+            </ul>
+
+            <ul class="connectionOnSocialSite">
+              <li class="li-social facebook-social">
+                <a
+                  title="Facebook"
+                  href="https://www.facebook.com/BeautyBebo-339715696750230/"
+                  target="_blank"
+                  ><span class="fa fa-facebook icon-social special"style></span
+                  ><span class="name-social"></span></a
+                >
+              </li>
+              <li class="li-social pinterest-social">
+                <a
+                  title="Instagram"
+                  href="https://www.instagram.com/beautybeboofficial/"
+                  target="_blank"
+                  ><span class="fa fa-instagram icon-social special"></span>
+                  <span class="name-social"></span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topicCss">
+              <h3>QUICK LINK</h3>
+              <hr class="new2" />
+            </div>
+
+            <ul class="links">
+              <li><a href="/about-us">About us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li>
+                <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+              </li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/return-policy">Return and Refund Policy</a></li>
+              <li><a href="/shipping-policy">Shipping Policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="topicCss">
+              <h3>CUSTOMER INFO</h3>
+              <hr class="new2" />
+            </div>
+
+            <ul class="links">
+              <li><a href="/customer/account/">My Account</a></li>
+              <li><a href="/track-order/">Track your Order</a></li>
+              <li><a href="/order-return">Order Returns</a></li>
+              <li><a href="/wishlist/">Wishlist</a></li>
+              <li><a href="/blog/">News &amp; Events</a></li>
+              <li><a href="/faqs">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="topicCss">
+              <h3>CATEGORIES</h3>
+              <hr class="new2" />
+            </div>
+
+            <ul class="links">
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Makeup</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Skin</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Hair</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Personal Care</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Mom &amp; Baby Care</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Fragrance</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="widget block block-category-link">
+                  <a href="#"><span>Ayurveda</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="new3" />
+        <div class="footerLastPart">
+          <div class="footer_payment_img"><img src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png" alt=""></div>
+          <div id="subsribeForm">
+            <h3>Signup for Newsletter</h3>
+            <input type="email" name="" id="subscribe" placeholder="Signup for Newsletter"   >
+            <button>Subscribe</button>
+          </div>
+          </div>
+          <p>@ 2020 All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
 
-
 <script>
- var btnScrollToTop = document.querySelector("#btnScrollToTop");
-       btnScrollToTop.addEventListener("click",  function (){
-           window.scrollTo({
-               top:0,
-               left:0,
-               behavior:"smooth",
-           })
-       })
+  // =======================script for the sroll button==========================================
+  var btnScrollToTop = document.querySelector("#btnScrollToTop");
+  btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+  //=====================script for to send on signuppage========================================!
+  function singOpFunction() {
+    window.location.href = "login.html";
+  }
 
-       function singOpFunction(){
-         window.location.href="login.html"
-       }
+  // =======================script for the first box of product==========================================!
+  var newProductData = [
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/e/repair_shampoo_650-2_1_1.jpg",
+      name: "Dove Intence Repair Shampoo 650 ml",
+      price: 350.0,
+      actuallPrice: "₹500.00",
+      percentOf: "10% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8908003416557_1.png",
+      name: "Organic Harvest Cleansing Milk",
+      price: 491.0,
+      actuallPrice: "₹545.00",
+      percentOf: "10% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/i/m/image1_600x.jpg",
+      name: "Lotus Herbals Whiteglow Vitamin C",
+      price: 428.0,
+      actuallPrice: "₹475.00",
+      percentOf: "10% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/6/3699c478906105612174-2.jpg",
+      name: "Wow Skin Science Face Serum",
+      price: 515.0,
+      actuallPrice: "₹599.00",
+      percentOf: "10% off",
+    },
+  ];
+
+  newProductData.map(function (elem) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.src = elem.image;
+
+    var name = document.createElement("p");
+    name.setAttribute("class", "nameHover");
+    name.innerText = elem.name;
+
+    var priceVary = document.createElement("div");
+    priceVary.setAttribute("class", "priceVary");
+
+    var actuallPrice = document.createElement("p");
+    actuallPrice.style.textDecoration = "line-through";
+    actuallPrice.innerText = elem.actuallPrice;
+
+    var price = document.createElement("p");
+    price.innerText = "₹" + elem.price;
+
+    var percent = document.createElement("p");
+    percent.innerText = elem.percentOf;
+    priceVary.append(actuallPrice, price, percent);
+
+    var div_starRating = document.createElement("div");
+    div_starRating.setAttribute("class", "starRating");
+
+    var span1_fa_fa_star_checked = document.createElement("span");
+    span1_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span1_fa_fa_star_checked);
+
+    var span2_fa_fa_star_checked = document.createElement("span");
+    span2_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span2_fa_fa_star_checked);
+
+    var span3_fa_fa_star_checked = document.createElement("span");
+    span3_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span3_fa_fa_star_checked);
+
+    var span4_fa_fa_star = document.createElement("span");
+    span4_fa_fa_star.setAttribute("class", "fa fa-star");
+
+    div_starRating.append(span4_fa_fa_star);
+
+    var span5_fa_fa_star = document.createElement("span");
+    span5_fa_fa_star.setAttribute("class", "fa fa-star");
+
+    div_starRating.append(span5_fa_fa_star);
+    var addToCart = document.createElement("div");
+    addToCart.setAttribute("class", "addTocartSet");
+    var heart = document.createElement("button");
+    heart.setAttribute("class", "fa-solid fa-heart cartheart");
+    var btn = document.createElement("button");
+    btn.innerText = "Add To Cart";
+    btn.style.backgroundColor = "#dd0285";
+    btn.style.color = "white";
+    btn.style.fontSize = "15px";
+    btn.style.padding = "10px";
+
+    btn.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
+
+    btn.addEventListener("click", function () {
+      buttonCart(elem);
+    });
+
+    addToCart.append(btn, heart);
+    div.append(img, name, div_starRating, priceVary, addToCart);
+    document.querySelector("#container").append(div);
+  });
+
+  var cartData = JSON.parse(localStorage.getItem("sendToCartData1")) || [];
+  function buttonCart(elem) {
+    cartData.push(elem);
+    console.log(cartData);
+    localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
+  }
+
+  var secondBoxData = [
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+      name: "Miss Claire Eyelash Glue",
+      price: 322.0,
+      actuallPrice: "₹350.00",
+      percentOf: "8% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/b/5b990e16902395773146_3.jpg",
+      name: "Maybelline New York Fit Primer",
+      price: 475.0,
+      actuallPrice: "₹599.00",
+      percentOf: "10% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/9/6902395735908_0.jpg",
+      name: "ponds",
+      price: 750.0,
+      actuallPrice: "₹899.00",
+      percentOf: "8% off",
+    },
+    {
+      image:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+      name: "ponds",
+      price: 604.0,
+      actuallPrice: "₹649.00",
+      percentOf: "7% off",
+    },
+  ];
+
+  secondBoxData.map(function (elem) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.src = elem.image;
+
+    var name = document.createElement("p");
+    name.setAttribute("class", "nameHover");
+    name.innerText = elem.name;
+
+    var priceVary = document.createElement("div");
+    priceVary.setAttribute("class", "priceVary");
+
+    var actuallPrice = document.createElement("p");
+    actuallPrice.style.textDecoration = "line-through";
+    actuallPrice.innerText = elem.actuallPrice;
+
+    var price = document.createElement("p");
+    price.innerText = "₹" + elem.price;
+
+    var percent = document.createElement("p");
+    percent.innerText = elem.percentOf;
+    priceVary.append(actuallPrice, price, percent);
+
+    var div_starRating = document.createElement("div");
+    div_starRating.setAttribute("class", "starRating");
+
+    var span1_fa_fa_star_checked = document.createElement("span");
+    span1_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span1_fa_fa_star_checked);
+
+    var span2_fa_fa_star_checked = document.createElement("span");
+    span2_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span2_fa_fa_star_checked);
+
+    var span3_fa_fa_star_checked = document.createElement("span");
+    span3_fa_fa_star_checked.setAttribute("class", "fa fa-star checked");
+
+    div_starRating.append(span3_fa_fa_star_checked);
+
+    var span4_fa_fa_star = document.createElement("span");
+    span4_fa_fa_star.setAttribute("class", "fa fa-star");
+
+    div_starRating.append(span4_fa_fa_star);
+
+    var span5_fa_fa_star = document.createElement("span");
+    span5_fa_fa_star.setAttribute("class", "fa fa-star");
+
+    div_starRating.append(span5_fa_fa_star);
+    var addToCart = document.createElement("div");
+    addToCart.setAttribute("class", "addTocartSet");
+    var heart = document.createElement("button");
+    heart.setAttribute("class", "fa-solid fa-heart cartheart");
+    var btn = document.createElement("button");
+    btn.innerText = "Add To Cart";
+    btn.style.backgroundColor = "#dd0285";
+    btn.style.color = "white";
+    btn.style.fontSize = "15px";
+    btn.style.padding = "10px";
+
+    btn.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
+
+    btn.addEventListener("click", function () {
+      buttonCartSecond(elem);
+    });
+
+    addToCart.append(btn, heart);
+    div.append(img, name, div_starRating, priceVary, addToCart);
+    document.querySelector("#secondContainer").append(div);
+  });
+  var cartData = JSON.parse(localStorage.getItem("sendToCartData1")) || [];
+  function buttonCartSecond(elem) {
+    cartData.push(elem);
+    console.log(cartData);
+    localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
+  }
 </script>
