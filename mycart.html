@@ -1383,10 +1383,10 @@
 
   // =========================cartdata marking======================
 
-  var data = JSON.parse(localStorage.getItem("sendToCartData1"));
-  console.log(data);
+  var cartData = JSON.parse(localStorage.getItem("sendToCartData1"));
+  console.log(cartData);
 
-  var total = data.reduce(function (sum, elem, ind, arr) {
+  var total = cartData.reduce(function (sum, elem, ind, arr) {
     return sum + Number(elem.price);
   }, 0);
 
@@ -1404,18 +1404,18 @@
     if (coupen == "INDIAN") {
       var disc = total - (total * 30) / 100;
       console.log(disc);
-      document.querySelector("#GST").value = disc;
+      document.querySelector("#GST").value = disc + "₹";
       alert("Hurray You got 30% Discount");
     } else {
       alert("Wrong Coupen Code Sorry");
-      document.querySelector("#GST").value =total;
+      document.querySelector("#GST").value = "₹" + total;
     }
     localStorage.setItem("totalPrice",total);
   }
  
   // =====================discount coupen code end============================
 
-  data.map(function (elem,index) {
+  cartData.map(function (elem) {
     var box = document.createElement("div");
     box.style.margin = "10px 12px";
     box.style.display = "flex";
@@ -1451,7 +1451,7 @@
     btn.innerText = "Remove";
     btn.setAttribute("id", "remove");
     btn.addEventListener("click", function () {
-      removeItem(elem,index);
+      removeItem(elem, index);
     });
 
     box.append(img, name, qty, total, btn);
@@ -1459,11 +1459,11 @@
     document.querySelector("tbody").append(box);
   });
 
-  function removeItem(elem,index) {
-    console.log(elem,index);
-    data.splice(index,1);
-    console.log(data);
-    localStorage.setItem("sendToCartData1", JSON.stringify(data));
+  function removeItem(elem, index) {
+    console.log(elem, index);
+    cartData.splice(index, 1);
+    console.log(cartData);
+    localStorage.setItem("cart", JSON.stringify(cartData));
     window.location.reload();
   }
 </script>
