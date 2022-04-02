@@ -1125,6 +1125,11 @@
             </div>
           </div>
         </div>
+        <div class="dropdown"> 
+          <button Class="dropbtn gotoCartButton">
+            <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+          </button>
+        </div>
       </div>
     <h4>CREATE NEW CUSTOMER ACCOUNT</h4>
 
@@ -1328,6 +1333,12 @@
 </html>
 
 <script>
+document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+function sendingToCart(){
+  window.location.href="mycart.html"
+}
+
  function singOpFunction(){
          window.location.href="login.html"
        }
