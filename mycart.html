@@ -1415,7 +1415,7 @@
  
   // =====================discount coupen code end============================
 
-  cartData.map(function (elem) {
+  cartData.map(function (elem,index) {
     var box = document.createElement("div");
     box.style.margin = "10px 12px";
     box.style.display = "flex";
@@ -1463,7 +1463,7 @@
     console.log(elem, index);
     cartData.splice(index, 1);
     console.log(cartData);
-    localStorage.setItem("cart", JSON.stringify(cartData));
+    localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
     window.location.reload();
   }
 </script>
