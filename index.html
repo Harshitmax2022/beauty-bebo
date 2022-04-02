@@ -18,7 +18,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
       * {
         font-family: "Roboto", sans-serif;
       }
@@ -246,7 +253,7 @@
         margin: auto;
         margin-top: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
 
       #colorWhite {
@@ -285,11 +292,9 @@
         margin: auto;
         margin-top: 20px;
       }
-      #lastestProduct {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
+     #latestProduct>h4{
+         margin-left: 2%;
+     }
       #color {
         color: #c60277;
         font-weight: bold;
@@ -314,20 +319,27 @@
       #btnScrollToTop:active {
         background-color: #c20978;
       }
-
+ #container,#secondContainer{
+     width: 95%;
+     margin: auto;
+ }
       #latestProduct {
-        width: 97%;
+      
         margin-top: 20px;
-        margin-left: 1%;
+       margin-bottom: 50px;
       }
-      #latestProduct > h4 {
-        margin-left: 2%;
-        text-decoration: underline;
-        color: #c20978;
-        font-weight: bold;
+      #latestProduct>div,#latest2>div{
+        text-align: center;
       }
-
-      #container,
+      .starRating{
+          color: gold;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .cartheart{
+          font-size: 20px;
+      }
+     
       #secondContainer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -335,61 +347,41 @@
         gap: 10;
       }
 
-      #container > div,
-      #secondContainer > div {
-        margin: auto;
+      #container>div,
+      #secondContainer>div {
+       
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
           rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
       }
-      #container > div:hover {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      }
+      
       .addToCartButton {
         font-size: large;
         margin: 0;
         border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
-      .nameHover {
-        text-align: center;
-      }
+      
       .nameHover:hover {
         color: #dd0285;
       }
-      .starRating {
-        margin-left: 30%;
+      
+      
+      
+      .priceVary>span {
+       margin: 5px;
+       
       }
-      .addTocartSet {
-        display: flex;
-        margin-left: 14%;
+      .priceVary>span:nth-child(2){
+          color: #dd0285;
+          font-weight: bold;
       }
-      .checked {
-        color: orange;
+      .priceVary>span:nth-child(3){
+          color: green;
+          font-weight: bold;
       }
-      .priceVary {
-        display: flex;
-        justify-content: flex-start;
-        margin: auto;
-        margin-left: 20%;
-      }
-      .priceVary p {
-        margin-left: 5%;
-      }
-      .priceVary p:nth-child(2) {
-        color: #dd0285;
-        font-weight: bold;
-      }
-      .priceVary p:nth-child(3) {
-        color: green;
-        font-weight: bold;
-      }
-      .cartheart {
-        font-size: 25px;
-        margin-left: 5px;
-        border: 0;
-        border-radius: 5px;
-      }
+      
+     
       .cartheart:hover {
         background-color: #dd0285;
         color: white;
@@ -397,7 +389,7 @@
       #allOption {
         border: 1px solid #cabbd1e3;
         display: grid;
-        width: 95%;
+        width: 97%;
         margin: auto;
         grid-template-columns: repeat(7, 1fr);
         margin-top: 20px;
@@ -426,7 +418,7 @@
         width: 97%;
         margin: auto;
       }
-      #secondContainer > div:hover {
+      #secondContainer>div:hover,.parentChildDiv:hover {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
           rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
           rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -565,15 +557,15 @@
   </head>
   <body>
     <img
-    src="https://www.beautybebo.com/pub/media/bb-app.png"
-    alt=""
-    id="play"
-  />
-  <img
-    src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
-    alt=""
-    id="banner"
-  />
+      src="https://www.beautybebo.com/pub/media/bb-app.png"
+      alt=""
+      id="play"
+    />
+    <img
+      src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+      alt=""
+      id="banner"
+    />
 
     <div id="topbar">
       <div id="beautyLogo">
@@ -1127,10 +1119,11 @@
           </div>
         </div>
       </div>
-       <!-- ========================importent direct button for go to addtocart================================== -->
-      <div class="dropdown"> 
-        <button Class="dropbtn gotoCartButton">
-          <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+      <!-- ========================importent direct button for go to addtocart================================== -->
+      <div class="dropdown">
+        <button class="dropbtn gotoCartButton">
+          <i style="margin-right: 5px" class="fa-solid fa-bag-shopping"></i>MY
+          CART
         </button>
       </div>
     </div>
@@ -1189,8 +1182,10 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div id="firstSlider" style="width: 70%;">
         <img src="banner.jpg" alt="" />
+        <img src="banner2.jpg" alt="">
+        <img src="banner3.jpg" alt="">
       </div>
     </div>
     <!-- scroll barr start -->
@@ -1282,9 +1277,12 @@
           <p>PREAGRANCE</p>
         </div>
       </div>
-      <div id="secondContainer">
-        <!-- =======================secondBox of product============================================================ -->
+      <div id="latest2" >
+        <div id="secondContainer">
+            <!-- =======================secondBox of product============================================================ -->
+          </div>
       </div>
+     
     </div>
 
     <!-- =====AREA FOR GIRL SCRUP PIC========= -->
@@ -1396,12 +1394,16 @@
               </li>
               <li>
                 <div class="widget block block-category-link">
-                  <a href="personal_care_bath_brushes.html"><span>Personal Care</span></a>
+                  <a href="personal_care_bath_brushes.html"
+                    ><span>Personal Care</span></a
+                  >
                 </div>
               </li>
               <li>
                 <div class="widget block block-category-link">
-                  <a href="mom_baby_care_wips.html"><span>Mom & Baby Care</span></a>
+                  <a href="mom_baby_care_wips.html"
+                    ><span>Mom & Baby Care</span></a
+                  >
                 </div>
               </li>
               <li>
@@ -1439,6 +1441,8 @@
         <p>@ 2020 All Rights Reserved</p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
 
@@ -1469,14 +1473,6 @@
     },
     {
       producturl:
-        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8908003416557_1.png",
-      productname: "Organic Harvest Cleansing Milk",
-      price: 491.0,
-      strickedoff: "₹545.00",
-      discount: "10% off",
-    },
-    {
-      producturl:
         "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/i/m/image1_600x.jpg",
       productname: "Lotus Herbals Whiteglow Vitamin C",
       price: 428.0,
@@ -1491,28 +1487,62 @@
       strickedoff: "₹599.00",
       discount: "10% off",
     },
+    {
+      producturl:
+        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+      productname: "Miss Claire Eyelash Glue",
+      price: 322.0,
+      strickedoff: "₹350.00",
+      discount: "8% off",
+    },
+    {
+            price: "603.00",
+            discount: "10% off",
+            productname: "Miss Claire Mineral Blusher Kit - 3716-4-04",
+            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/_/5_91.jpg",
+            strickedoff: "₹599.00"
+        },
+        {
+            price: "603.00",
+            discount: "10% off",
+            productname: "Chicco Veste Asciutto Dry Fitting Diapers Extra Large - 14 Pieces",
+            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/_/_/.....1.jpg",
+            strickedoff: "₹599.00"
+        },
+    {
+            price: "603.00",
+            discount: "10% off",
+            productname: "Miss Claire Make Up Palette 9955-2 (Make Up Kit)",
+            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/3/134.jpg",
+            strickedoff: "₹670.00",
+        },
   ];
 
   newProductData.map(function (elem) {
-    var div = document.createElement("div");
-    var img = document.createElement("img");
-    img.src = elem.producturl;
+    var parentChild = document.createElement("div");
+      parentChild.setAttribute("class","parentChildDiv")
+    
+    var imageDiv=document.createElement("div");
+   var productimage = document.createElement("img");
+     productimage.src = elem.producturl;
+       imageDiv.append(productimage);
 
-    var name = document.createElement("p");
-    name.setAttribute("class", "nameHover");
-    name.innerText = elem.productname;
+    
+       var productName=document.createElement("div");
+      productName.setAttribute("class", "nameHover");
+        productName.innerText = elem.productname;
 
     var priceVary = document.createElement("div");
     priceVary.setAttribute("class", "priceVary");
 
-    var actuallPrice = document.createElement("p");
+    var actuallPrice = document.createElement("span");
     actuallPrice.style.textDecoration = "line-through";
     actuallPrice.innerText = elem.strickedoff;
 
-    var price = document.createElement("p");
+    var price = document.createElement("span");
     price.innerText = "₹" + elem.price;
 
-    var percent = document.createElement("p");
+    var percent = document.createElement("span");
     percent.innerText = elem.discount;
     priceVary.append(actuallPrice, price, percent);
 
@@ -1547,23 +1577,23 @@
     addToCart.setAttribute("class", "addTocartSet");
     var heart = document.createElement("button");
     heart.setAttribute("class", "fa-solid fa-heart cartheart");
-    var btn = document.createElement("button");
-    btn.innerText = "Add To Cart";
-    btn.style.backgroundColor = "#dd0285";
-    btn.style.color = "white";
-    btn.style.fontSize = "15px";
-    btn.style.padding = "10px";
+    var cartButton = document.createElement("button");
+    cartButton.innerText = "Add To Cart";
+    cartButton.style.backgroundColor = "#dd0285";
+    cartButton.style.color = "white";
 
-    btn.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
+    cartButton.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
 
-    btn.addEventListener("click", function () {
+    cartButton.addEventListener("click", function () {
       buttonCart(elem);
     });
 
-    addToCart.append(btn, heart);
-    div.append(img, name, div_starRating, priceVary, addToCart);
-    document.querySelector("#container").append(div);
+    addToCart.append(cartButton, heart);
+    parentChild.append( imageDiv, productName, div_starRating, priceVary, addToCart);
+    document.querySelector("#container").append(parentChild);
   });
+
+
 
   var cartData = JSON.parse(localStorage.getItem("sendToCartData1")) || [];
   function buttonCart(elem) {
@@ -1572,6 +1602,7 @@
     localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
   }
 
+  
   var secondBoxData = [
     {
       producturl:
@@ -1598,36 +1629,40 @@
       percentOf: "8% off",
     },
     {
-      producturl:
-        "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
-      productname: "ponds",
-      price: 604.0,
-      strickedoff: "₹649.00",
-      percentOf: "7% off",
-    },
+            price: 242.00,
+            discount: "10% off",
+            productname: "Ponds White Beauty Spot-Less Fairness Day Cream",
+            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/1/p11.jpg",
+            strickedoff: "₹269.00",
+        },
   ];
 
   secondBoxData.map(function (elem) {
-    var div = document.createElement("div");
-    var img = document.createElement("img");
-    img.src = elem.producturl;
+    var parentChild = document.createElement("div");
+      parentChild.setAttribute("class","parentChildDiv")
+    
+    var imageDiv=document.createElement("div");
+   var productimage = document.createElement("img");
+     productimage.src = elem.producturl;
+       imageDiv.append(productimage);
 
-    var name = document.createElement("p");
-    name.setAttribute("class", "nameHover");
-    name.innerText = elem.productname;
+    
+       var productName=document.createElement("div");
+      productName.setAttribute("class", "nameHover");
+        productName.innerText = elem.productname;
 
     var priceVary = document.createElement("div");
     priceVary.setAttribute("class", "priceVary");
 
-    var actuallPrice = document.createElement("p");
+    var actuallPrice = document.createElement("span");
     actuallPrice.style.textDecoration = "line-through";
     actuallPrice.innerText = elem.strickedoff;
 
-    var price = document.createElement("p");
+    var price = document.createElement("span");
     price.innerText = "₹" + elem.price;
 
-    var percent = document.createElement("p");
-    percent.innerText = elem.percentOf;
+    var percent = document.createElement("span");
+    percent.innerText = elem.discount;
     priceVary.append(actuallPrice, price, percent);
 
     var div_starRating = document.createElement("div");
@@ -1661,22 +1696,20 @@
     addToCart.setAttribute("class", "addTocartSet");
     var heart = document.createElement("button");
     heart.setAttribute("class", "fa-solid fa-heart cartheart");
-    var btn = document.createElement("button");
-    btn.innerText = "Add To Cart";
-    btn.style.backgroundColor = "#dd0285";
-    btn.style.color = "white";
-    btn.style.fontSize = "15px";
-    btn.style.padding = "10px";
+    var cartButton = document.createElement("button");
+    cartButton.innerText = "Add To Cart";
+    cartButton.style.backgroundColor = "#dd0285";
+    cartButton.style.color = "white";
 
-    btn.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
+    cartButton.setAttribute("class", "addToCartButton fa-solid fa-cart-arrow-down");
 
-    btn.addEventListener("click", function () {
-      buttonCartSecond(elem);
+    cartButton.addEventListener("click", function () {
+      buttonCart(elem);
     });
 
-    addToCart.append(btn, heart);
-    div.append(img, name, div_starRating, priceVary, addToCart);
-    document.querySelector("#secondContainer").append(div);
+    addToCart.append(cartButton, heart);
+    parentChild.append( imageDiv, productName, div_starRating, priceVary, addToCart);
+    document.querySelector("#secondContainer").append(parentChild);
   });
   var cartData = JSON.parse(localStorage.getItem("sendToCartData1")) || [];
   function buttonCartSecond(elem) {
@@ -1685,11 +1718,86 @@
     localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
   }
 
-
   // =============================gotoCartButton=======================
-  document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+  document
+    .querySelector(".gotoCartButton")
+    .addEventListener("click", sendingToCart);
 
-function sendingToCart(){
-  window.location.href="mycart.html"
-}
+  function sendingToCart() {
+    window.location.href = "mycart.html";
+  }
+
+
+  $('#container').slick({
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+$('#firstSlider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 </script>
