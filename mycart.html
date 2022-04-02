@@ -58,7 +58,7 @@
 
       #cartprice {
         width: 30%;
-        height: 415px;
+        /* height: 415px; */
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
           rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         margin-top: 20px;
@@ -1376,6 +1376,11 @@
     });
   });
 
+  document.querySelector("#checkout").addEventListener("click",checkout);
+    function checkout(){
+      window.location.href = "checkout.html";
+    }
+
   // =========================cartdata marking======================
 
   var cartData = JSON.parse(localStorage.getItem("sendToCartData1"));
@@ -1416,7 +1421,7 @@
     box.style.display = "flex";
     box.style.boxShadow =
       "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px";
-    box.style.width = "100%";
+    // box.style.width = "100%";
 
     var img = document.createElement("img");
     img.src = elem.producturl;
