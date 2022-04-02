@@ -1404,11 +1404,11 @@
     if (coupen == "INDIAN") {
       var disc = total - (total * 30) / 100;
       console.log(disc);
-      document.querySelector("#GST").value = disc + "₹";
+      document.querySelector("#GST").value = disc ;
       alert("Hurray You got 30% Discount");
     } else {
       alert("Wrong Coupen Code Sorry");
-      document.querySelector("#GST").value = "₹" + total;
+      document.querySelector("#GST").value =  total;
     }
     localStorage.setItem("totalPrice",total);
   }
