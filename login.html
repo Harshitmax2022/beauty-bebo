@@ -1318,6 +1318,12 @@
 </html>
 
 <script>
+document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+function sendingToCart(){
+  window.location.href="mycart.html"
+}
+
 function singOpFunction(){
          window.location.href="login.html"
        }

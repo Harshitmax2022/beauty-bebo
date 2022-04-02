@@ -1164,6 +1164,11 @@
           </div>
         </div>
       </div>
+      <div class="dropdown"> 
+        <button Class="dropbtn gotoCartButton">
+          <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+        </button>
+      </div>
     </div>
 
     <!-- navbar end -->
@@ -1207,8 +1212,8 @@
           </div>
           <hr />
           <div class="subtotal">
-            <div>Order Total Incl. GST</div>
-            <div><input type="number" placeholder="total" id="GST" /></div>
+            <div>Price after Discount</div>
+            <div><input type="number" placeholder= "₹ 0.00" id="GST" /></div>
           </div>
           <hr />
           <div class="input">
@@ -1364,6 +1369,12 @@
 </html>
 
 <script>
+document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+function sendingToCart(){
+  window.location.href="mycart.html"
+}
+
   function singOpFunction() {
     window.location.href = "login.html";
   }

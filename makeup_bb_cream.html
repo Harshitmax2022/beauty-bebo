@@ -1222,7 +1222,7 @@
          MOMS &BABY CARE
          <i class="fa fa-caret-down"></i>
        </button>
-       <!-- <div class="dropdown-content">
+       <div class="dropdown-content">
             <div class="row">
               <div class="column">
                 <h5>BABY CARE</h5>
@@ -1247,7 +1247,7 @@
                 <h5><img src="topicpic4.jpg" alt="" /></h5>
               </div>
             </div>
-          </div> -->
+          </div>
      </div>
      <div class="dropdown">
        <button class="dropbtn">
@@ -1338,6 +1338,11 @@
             </div>
           </div>
      </div>
+     <div class="dropdown"> 
+      <button Class="dropbtn gotoCartButton">
+        <i style="margin-right: 5px;" class="fa-solid fa-bag-shopping"></i>MY CART
+      </button>
+    </div>
    </div>
    <!-- navbar end -->
 
@@ -1596,6 +1601,14 @@
 
 </html>
 <script>
+
+  
+document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+
+function sendingToCart(){
+  window.location.href="mycart.html"
+}
+
 
 function singOpFunction() {
     window.location.href = "login.html";
