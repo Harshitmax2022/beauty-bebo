@@ -15,7 +15,9 @@ JavaScript : 44.70%
 Some Glimpse and Screenshots of our website:-
 Home Page -
 
+   <div>
     <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/700/1*ruiGqMuFvcDS_b7ywchRWg.jpeg" style="max-width: 100%>
+</div>
                                                                                                                                       
 This is the main landing page of our website. Here clicking on any option on the Navbar will redirect the user to the respective Product Page.
 It is fully functional.
