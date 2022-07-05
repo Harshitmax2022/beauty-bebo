@@ -1,7 +1,7 @@
 Collaborative Project At Masai School “Beauty Bebo Clone”.
 Getting Started…
 It was a challenging journey for me and all my team members as we have to complete it within the time of construct week, so we faced different challenges like it was our first project and we did not have any experience working in a team also we did not know how to manage everything within the period. So we started with planning and studying the website, then we distributed the workflow, the roles, and responsibilities and with great collaboration, we managed the work.
-
+https://miro.medium.com/max/700/1*ruiGqMuFvcDS_b7ywchRWg.jpeg
 Project Details -
 We had to make a replica of the Beauty Bebo website.
 Beauty Bebo is India’s fastest growing online retail store for the day-to-day and special occasion needs of Makeup, Skincare, Haircare, Personal care, Mom and Baby care, Fragrance, and Ayurveda products.
