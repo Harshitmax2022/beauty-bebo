@@ -27,9 +27,9 @@ Here we have a sign-in Icon in the top right corner when the user clicks on the 
 Here we integrate User authentication to check whether the user email and password match with details existing in the database.
 
 Sign-In page
-                                                                                                                                       <div>
-    <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/700/1*Q4a24vig4qmP1iV2DA9yhg.jpeg" style="max-width: 100%>
-</div>
+   <div>
+    <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/700/1*ruiGqMuFvcDS_b7ywchRWg.jpeg" style="max-width: 100%>
+</div>  
                                                                                                                                        
 Sign-Up Form-
 Here we have a sign-up page if a user is new so he needs to create an account that’s why we have given a button to click to go through the signup option when the user clicks on the create an account button.
