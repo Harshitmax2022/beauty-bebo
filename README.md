@@ -18,21 +18,25 @@ Home Page -
    <div>
     <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/700/1*ruiGqMuFvcDS_b7ywchRWg.jpeg" style="max-width: 100%>
 </div>
-                                                                                                                                      
+                                                                                                                                
 This is the main landing page of our website. Here clicking on any option on the Navbar will redirect the user to the respective Product Page.
 It is fully functional.
 
-Home Page
 Sign In From -
 Here we have a sign-in Icon in the top right corner when the user clicks on the sign-in button near the Heart button.
 Here we integrate User authentication to check whether the user email and password match with details existing in the database.
 
 Sign-In page
+                                                                                                                                       <div>
+    <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/700/1*Q4a24vig4qmP1iV2DA9yhg.jpeg" style="max-width: 100%>
+</div>
+                                                                                                                                       
 Sign-Up Form-
 Here we have a sign-up page if a user is new so he needs to create an account that’s why we have given a button to click to go through the signup option when the user clicks on the create an account button.
 After filling in the information and summiting the form his/her account is automatically created and he/she will be redirected to the login page.
 
-Sign-Up Page
+Sign-Up Page 
+                                                                                                                                       
 All Products page -
 
 When you hover on our navbar all the product+category pages will appear In.
