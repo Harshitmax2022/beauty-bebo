@@ -113,6 +113,3 @@ Hello, I worked on my first project. This is my first project. We are all team o
 Hope you all like our Cloned website.
 
 Thank you.
-
-
-Video-demo-https://www.linkedin.com/posts/harshit-tripathi-ab9191216_team-work-opportunity-activity-6916327638802272256-f3O1?utm_source=linkedin_share&utm_medium=member_desktop_web
